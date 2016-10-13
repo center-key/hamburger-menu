@@ -1,0 +1,43 @@
+<!doctype html>
+<!-- - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Hamburger Menu ☰ A responsive CSS solution  -->
+<!-- github.com/center-key/hamburger-menu        -->
+<!-- MIT or WTFPL (your choice)                  -->
+<!-- - - - - - - - - - - - - - - - - - - - - - - -->
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<title>Hamburger Menu</title>
+<link rel=icon       href=http://centerkey.com/graphics/bookmark.png>
+<link rel=stylesheet href=../hamburger-menu.css>
+</head>
+<body>
+
+<header>
+   <nav class=hamburger-menu>
+      <a class=hamburger href=#>&#9776;</a>
+      <ul>
+         <li data-menu=gateway> <a href=.>Home</a></li>
+         <li data-menu=products><a href=products.html>Products</a></li>
+         <li data-menu=support> <a href=support.html>Support</a></li>
+         <li data-menu=about>   <a href=about.html>About</a></li>
+      </ul>
+   </nav>
+</header>
+
+<main data-menu=products>
+   <h1>Products</h1>
+   <h2>Hamburgers rule!</h2>
+   <p>
+      The page tests a <b>short</b> menu with <b>short</b> content.
+   </p>
+   <p>
+      Biltong pancetta cow, ham hock drumstick kielbasa salami. Porchetta venison shankle bresaola meatloaf chuck drumstick ground round biltong pork loin tongue pork belly tri-tip short loin. Turkey fatback shankle pancetta andouille swine. Chicken drumstick shankle short ribs.
+   </p>
+</main>
+
+<script src=https://cdn.jsdelivr.net/jquery/3/jquery.min.js></script>
+<script src=../hamburger-menu.js></script>
+</body>
+</html>
