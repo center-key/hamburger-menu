@@ -1,5 +1,8 @@
-// Hamburger Menu
-// A responsive CSS solution
+////////////////////////////////////////////////
+// Hamburger Menu ☰ A responsive CSS solution //
+// github.com/center-key/hamburger-menu       //
+// MIT or WTFPL (your choice)                 //
+////////////////////////////////////////////////
 
 $(document).on({ click: $.noop });  //workaround for sticky hover on mobile
 
