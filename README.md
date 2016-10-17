@@ -1,14 +1,17 @@
 ### Hamburger Menu
 
 *A responsive CSS solution*
+
 ---
 
 Hamburger menus should be used with caution as they can impair user interaction.  As they say, *"Out of sight, out of mind"*.
 
-When you do need a hamburger menu, this solution uses CSS to replace the menu with a hamburger icon on mobile devices or any sufficiently narrow screen.
+When you do need a hamburger menu, this solution uses CSS to replace the menu with a tappable hamburger icon on mobile devices or any sufficiently narrow screen.
 
-Test it out and view the source code at:<br>
-[centerkey.com/hamgurger-menu](http://centerkey.com/hamgurger-menu)
+## Test drive
+
+Try it out and view the source code at:<br>
+[centerkey.com/hamgurger-menu](http://centerkey.com/hamgurger-menu/test-site)
 
 ### Usage
 
@@ -44,16 +47,16 @@ Customize the colors by editing or overriding:
 /* Hamburger Menu Colors */
 nav.hamburger-menu .hamburger,
 nav.hamburger-menu >ul >li >a {
-   color: gainsboro;              /* menu font color */
+   color: gainsboro;           /* menu font color */
    }
 nav.hamburger-menu .hamburger,
 nav.hamburger-menu >ul {
-   background-color: black;       /* menu background color */
+   background-color: black;    /* menu background color */
    }
 nav.hamburger-menu >ul >li.current >a,
 nav.hamburger-menu >ul >li:hover >a {
-   color: white;                  /* menu font highlight color on hover */
-   background-color: dimgray;     /* menu background highlight color on hover */
+   color: white;               /* menu font highlight color on hover */
+   background-color: dimgray;  /* menu background highlight color on hover */
    }
 ```
 
@@ -89,6 +92,10 @@ The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** j
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
 ```
+
+### Issues
+
+This library has been tested on iPhones and Androids.  If you encounter a bug or have a question, submit an [issue](https://github.com/center-key/hamburger-menu/issues).
 
 ### License
 
