@@ -5,15 +5,13 @@
 /**********************************************/
 
 /*
-HTML for Hamberger Menu:
-   <nav class=hamburger-menu>
-      <a class=hamburger href=#>&#9776;</a>
-      <ul>
-         <li><a href=page1>Page 1</a></li>
-         <li><a href=page2>Page 2</a></li>
-         <li><a href=page3>Page 3</a></li>
-      </ul>
-   </nav>
+Structure for Hamberger Menu:
+   nav.hamburger-menu
+      a.hamburger
+      ul
+         li a
+         li a
+         li a
 */
 
 /* Base */
@@ -26,7 +24,7 @@ body {
    margin: 0px;
    }
 
-/* Configuration */
+/* Hamburger Menu Colors */
 nav.hamburger-menu .hamburger,
 nav.hamburger-menu >ul >li >a {
    color: gainsboro;              /* menu font color */
