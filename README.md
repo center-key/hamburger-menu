@@ -11,7 +11,7 @@ When you do need a hamburger menu, this solution uses CSS to replace the menu wi
 ## Test drive
 
 Try it out and view the source code at:<br>
-[centerkey.com/hamgurger-menu](http://centerkey.com/hamgurger-menu/test-site)
+[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
 
 ### Usage
 
