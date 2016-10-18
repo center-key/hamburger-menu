@@ -82,6 +82,7 @@ Example `products.html` page:
       </ul>
    </nav>
 </header>
+
 <main data-menu=products>
    <h1>Products</h1>
    <p>Product info...</p>
