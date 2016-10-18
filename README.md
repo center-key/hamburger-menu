@@ -10,12 +10,12 @@ When you do need a hamburger menu, this solution uses CSS to replace the navigat
 
 ### Test drive
 
-Try it out and view the source code at:<br>
+Try it out:
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
 
-<kbd><img src=screenshots/desktop-menu.png align=left height=300></kbd>
 <kbd><img src=screenshots/mobile-hamburger.png align=left height=300></kbd>
-<kbd><img src=screenshots/mobile-menu.png align=left height=300></kbd>
+<kbd><img src=screenshots/mobile-menu.png      align=left height=300></kbd>
+<kbd><img src=screenshots/desktop-menu.png     align=left height=300></kbd>
 
 ### Usage
 
@@ -41,7 +41,7 @@ Include the CSS and JavaScript:
 <script src=hamburger-menu.js></script>
 ```
 
-Adjust the `<body>` padding in CSS file as needed for the width of your menu.
+Adjust the `<body>` padding in the CSS file as needed for the width of your menu.
 
 ### Colors
 
@@ -89,9 +89,9 @@ Example `products.html` page:
 ...
 ```
 
-### Removing jQuery Dependency
+### Removing jQuery dependency
 
-The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery and the `hamburger-menu.js` file by incorporating this line of JavaScript in your website:
+The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
