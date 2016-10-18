@@ -13,9 +13,9 @@ When you do need a hamburger menu, this solution uses CSS to replace the navigat
 Try it out and view the source code at:<br>
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
 
-<kbd><img src=screenshots/desktop-menu.png align=left height=250></kbd>
-<kbd><img src=screenshots/mobile-hamburger.png align=left height=250></kbd>
-<kbd><img src=screenshots/mobile-menu.png align=left height=250></kbd>
+<kbd><img src=screenshots/desktop-menu.png align=left height=300></kbd>
+<kbd><img src=screenshots/mobile-hamburger.png align=left height=300></kbd>
+<kbd><img src=screenshots/mobile-menu.png align=left height=300></kbd>
 
 ### Usage
 
