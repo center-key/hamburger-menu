@@ -6,12 +6,16 @@
 
 Hamburger menus should be used with caution as they can impair user interaction.  As they say, *"Out of sight, out of mind"*.
 
-When you do need a hamburger menu, this solution uses CSS to replace the menu with a tappable hamburger icon on mobile devices or any sufficiently narrow screen.
+When you do need a hamburger menu, this solution uses CSS to replace the navigation menu with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.  Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
-## Test drive
+### Test drive
 
 Try it out and view the source code at:<br>
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
+
+<kbd><img src=screenshots/desktop-menu.png align=left height=250></kbd>
+<kbd><img src=screenshots/mobile-hamburger.png align=left height=250></kbd>
+<kbd><img src=screenshots/mobile-menu.png align=left height=250></kbd>
 
 ### Usage
 
@@ -37,7 +41,7 @@ Include the CSS and JavaScript:
 <script src=hamburger-menu.js></script>
 ```
 
-That's it.
+Adjust the `<body>` padding in CSS file as needed for the width of your menu.
 
 ### Colors
 
