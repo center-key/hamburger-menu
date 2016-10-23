@@ -63,7 +63,7 @@ nav.hamburger-menu >ul >li >a {
    font-weight: bold;
    text-decoration: none;
    padding: 10px 15px 10px 8px;
-   transition: 0.4s all;
+   transition: all 0.4s;
    }
 @media(max-width: 750px) {
    body {
@@ -82,7 +82,7 @@ nav.hamburger-menu >ul >li >a {
       padding: 6px 10px 8px 8px;
       }
    nav.hamburger-menu .hamburger:not(:hover) {
-      transition: opacity 0.5s 0.8s;
+      transition: opacity 0.5s 0.8s;  /* delay to allow menu time to hide */
       }
    nav.hamburger-menu .hamburger:hover {
       opacity: 0;
