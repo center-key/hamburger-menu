@@ -5,7 +5,7 @@
 /**********************************************/
 
 /*
-Structure for Hamberger Menu:
+Structure for Hamburger Menu:
    nav.hamburger-menu
       a.hamburger
       ul
@@ -65,7 +65,7 @@ nav.hamburger-menu >ul >li >a {
    padding: 10px 15px 10px 8px;
    transition: all 0.4s;
    }
-@media(max-width: 750px) {
+@media (max-width: 667px) {  /* selects iPhone 6/6s/7 landscape and anything narrower */
    body {
       padding: 2rem 0.5rem 0rem 0.5rem;
       cursor: pointer;  /* enables closing menu */
