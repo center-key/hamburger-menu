@@ -7,9 +7,9 @@
 // To automatically set the current state, add the "data-menu" attribute to each <li> tag
 // in the Hamburger Menu and to the <main> tag.
 
-window.hamburgerMenu = {
+var hamburgerMenu = {
    setup: function() {
-      $(document).on({ click: $.noop });  //workaround for sticky hover on mobile
+      $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
       var menuItem = $('main').data().menu;  //use "data-menu" attribute to set current menu item
       $('nav.hamburger-menu li[data-menu=' + menuItem + ']').addClass('current');
       }
