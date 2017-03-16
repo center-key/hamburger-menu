@@ -13,9 +13,9 @@ When you do need a hamburger menu, this solution uses CSS to replace the navigat
 Try it out:
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
 
-<kbd><img src=screenshots/mobile-hamburger.png align=left height=275></kbd>
-<kbd><img src=screenshots/mobile-menu.png      align=left height=275></kbd>
-<kbd><img src=screenshots/desktop-menu.png     align=left height=275></kbd>
+<kbd><img src=screenshots/mobile-hamburger.png align=left height=275 alt=screenshot></kbd>
+<kbd><img src=screenshots/mobile-menu.png      align=left height=275 alt=screenshot></kbd>
+<kbd><img src=screenshots/desktop-menu.png     align=left height=275 alt=screenshot></kbd>
 
 ### Usage
 
@@ -104,4 +104,4 @@ This library has been tested on iPhones and Androids.  If you encounter a bug or
 
 ### License
 
-MIT or WTFPL (your choice)
+[MIT](LICENSE.txt) or WTFPL (your choice)
