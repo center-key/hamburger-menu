@@ -8,10 +8,11 @@
 Structure for Hamburger Menu:
    nav.hamburger-menu
       a.hamburger
-      ul
-         li a
-         li a
-         li a
+      aside
+         ul
+            li a
+            li a
+            li a
 */
 
 /* Base */
