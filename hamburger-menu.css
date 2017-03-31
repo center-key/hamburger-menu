@@ -25,16 +25,15 @@ body {
    }
 
 /* Hamburger Menu Colors */
-nav.hamburger-menu .hamburger,
-nav.hamburger-menu >ul >li >a {
+nav.hamburger-menu a {
    color: gainsboro;              /* menu font color */
    }
 nav.hamburger-menu .hamburger,
-nav.hamburger-menu >ul {
+nav.hamburger-menu aside {
    background-color: black;       /* menu background color */
    }
-nav.hamburger-menu >ul >li.current >a,
-nav.hamburger-menu >ul >li:hover >a {
+nav.hamburger-menu li.current >a,
+nav.hamburger-menu li a:hover {
    color: white;                  /* menu font highlight color on hover */
    background-color: dimgray;     /* menu background highlight color on hover */
    }
@@ -43,27 +42,35 @@ nav.hamburger-menu >ul >li:hover >a {
 nav.hamburger-menu .hamburger {
    display: none;
    }
-nav.hamburger-menu >ul {
+nav.hamburger-menu aside {
    position: fixed;
    top: 0px;
    bottom: 0px;
    left: 0px;
-   list-style: none;
    padding: 0px;
    margin: 0px;
    overflow-y: scroll;
    }
-nav.hamburger-menu .hamburger,
-nav.hamburger-menu >ul >li >a {
-   text-decoration: none;
+nav.hamburger-menu ul {
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
    }
-nav.hamburger-menu >ul >li >a {
+nav.hamburger-menu li.current >a {
+   cursor: default;
+   }
+nav.hamburger-menu a {
    display: block;
    font-size: 1.1rem;
    font-weight: bold;
+   text-align: left;
    text-decoration: none;
    padding: 10px 15px 10px 8px;
    transition: all 0.4s;
+   }
+nav.hamburger-menu ul ul a {
+   font-size: 0.8rem;
+   padding: 4px 15px 4px 24px;
    }
 @media (max-width: 667px) {  /* selects iPhone 6/6s/7 landscape and anything narrower */
    body {
@@ -87,12 +94,15 @@ nav.hamburger-menu >ul >li >a {
    nav.hamburger-menu .hamburger:hover {
       opacity: 0;
       }
-   nav.hamburger-menu >ul {
+   nav.hamburger-menu aside {
       max-width: 0px;
       overflow: hidden;
       transition: max-width 1.0s;
       }
-   nav.hamburger-menu:hover .hamburger + ul {
+   nav.hamburger-menu aside ul li {
+      white-space: nowrap;
+      }
+   nav.hamburger-menu:hover .hamburger + aside {
       max-width: 10em;
       overflow-y: scroll;
       }

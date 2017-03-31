@@ -17,12 +17,20 @@
 <header>
    <nav class=hamburger-menu>
       <a class=hamburger href=#>&#9776;</a>
-      <ul>
-         <li data-menu=gateway> <a href=.>Home</a></li>
-         <li data-menu=products><a href=products.html>Products</a></li>
-         <li data-menu=support> <a href=support.html>Support</a></li>
-         <li data-menu=about>   <a href=about.html>About</a></li>
-      </ul>
+      <aside>
+         <ul>
+            <li data-menu=gateway><a href=.>Home</a></li>
+            <li data-menu=products>
+               <a href=products.html>Products</a>
+               <ul>
+                  <li data-menu=product-x3000><a href=product-x3000.html>X-3000</a></li>
+                  <li data-menu=product-x3200><a href=product-x3200.html>X-3200</a></li>
+               </ul>
+            </li>
+            <li data-menu=support><a href=support.html>Support</a></li>
+            <li data-menu=about><a href=about.html>About</a></li>
+         </ul>
+      </aside>
    </nav>
 </header>
 
@@ -30,7 +38,7 @@
    <h1>Home</h1>
    <h2>Hamburgers rule!</h2>
    <p>
-      The page tests a <b>short</b> menu with <b>long</b> content.
+      This page tests a <b>short</b> menu with <b>long</b> content.
    </p>
    <p>
       Bacon ipsum dolor amet brisket tail chuck meatball leberkas doner. Burgdoggen ribeye shank brisket. Biltong short ribs kielbasa, ball tip pork belly chuck rump frankfurter. Shank filet mignon spare ribs, doner sirloin ham biltong alcatra pork meatloaf cow.

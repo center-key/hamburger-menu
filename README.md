@@ -49,18 +49,17 @@ Customize the colors by editing or overriding:
 
 ```css
 /* Hamburger Menu Colors */
-nav.hamburger-menu .hamburger,
-nav.hamburger-menu >ul >li >a {
-   color: gainsboro;           /* menu font color */
+nav.hamburger-menu a {
+   color: gainsboro;              /* menu font color */
    }
 nav.hamburger-menu .hamburger,
-nav.hamburger-menu >ul {
-   background-color: black;    /* menu background color */
+nav.hamburger-menu aside {
+   background-color: black;       /* menu background color */
    }
-nav.hamburger-menu >ul >li.current >a,
-nav.hamburger-menu >ul >li:hover >a {
-   color: white;               /* menu font highlight color on hover */
-   background-color: dimgray;  /* menu background highlight color on hover */
+nav.hamburger-menu li.current >a,
+nav.hamburger-menu li a:hover {
+   color: white;                  /* menu font highlight color on hover */
+   background-color: dimgray;     /* menu background highlight color on hover */
    }
 ```
 
