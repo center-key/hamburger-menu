@@ -13,3 +13,5 @@ mkdir -p $webFolder
 ls $webFolder
 cp -vR * $webFolder
 echo
+sleep 2
+open http://localhost/centerkey.com/hamburger-menu/spec

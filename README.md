@@ -8,10 +8,10 @@ Hamburger menus should be used with caution as they can impair user interaction.
 
 When you do need a hamburger menu, this solution uses CSS to replace the navigation menu with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.  Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
-### Test drive
+### Take it for spin
 
 Try it out:
-[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/test-site)
+[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)
 
 <kbd><img src=screenshots/mobile-hamburger.png align=left height=275 alt=screenshot></kbd>
 <kbd><img src=screenshots/mobile-menu.png      align=left height=275 alt=screenshot></kbd>
