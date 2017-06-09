@@ -48,6 +48,7 @@ nav.hamburger-menu aside {
    top: 0px;
    bottom: 0px;
    left: 0px;
+   float: none;
    padding: 0px;
    margin: 0px;
    overflow-y: scroll;
@@ -104,7 +105,7 @@ nav.hamburger-menu ul ul a {
       white-space: nowrap;
       }
    nav.hamburger-menu:hover .hamburger + aside {
-      max-width: 10em;
+      max-width: 15em;  /* used for animation -- must be greater than actual displayed width */
       overflow-y: scroll;
       }
    }
