@@ -1,8 +1,6 @@
-### Hamburger Menu
-
+# Hamburger Menu
+<p align=right>&#9776;</p>
 *A responsive CSS solution*
-
----
 
 Hamburger menus should be used with caution as they can impair user interaction.  As they say, *"Out of sight, out of mind"*.
 
@@ -10,7 +8,7 @@ When you do need a hamburger menu, this solution uses CSS to replace the navigat
 
 ### Take it for spin
 
-Try it out:
+Try it out:<br>
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)
 
 <kbd><img src=screenshots/mobile-hamburger.png align=left height=275 alt=screenshot></kbd>
@@ -37,7 +35,7 @@ Include the CSS and JavaScript:
 ```html
 <link rel=stylesheet href=hamburger-menu.css>
 ...
-<script src=https://cdn.jsdelivr.net/jquery/3.2/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js></script>
 <script src=hamburger-menu.js></script>
 ```
 
