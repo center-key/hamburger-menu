@@ -1,5 +1,6 @@
-# Hamburger Menu
 <p align=right>&#9776;</p>
+
+# Hamburger Menu
 *A responsive CSS solution*
 
 Hamburger menus should be used with caution as they can impair user interaction.  As they say, *"Out of sight, out of mind"*.
