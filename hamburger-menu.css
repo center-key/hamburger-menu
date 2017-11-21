@@ -18,7 +18,7 @@ Structure for Hamburger Menu:
 /* Base */
 html {
    font-size: 100%;
-   font-family: geneva, tahoma, sans-serif;
+   font-family: system-ui, geneva, tahoma, sans-serif;
    }
 body {
    padding: 0rem 2rem 0rem 8rem;  /* adjust left padding to provide enough space for menu */
