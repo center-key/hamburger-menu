@@ -28,6 +28,7 @@
       "mocha": true
    },
    "scripts": {
+      "web-server": "http-server -p 9776 &",
       "pretest": "jshint gulpfile.js",
       "test": "gulp lint"
    },
@@ -39,6 +40,7 @@
       "gulp-htmlhint": "~2.0",
       "gulp-jshint": "~2.1",
       "gulp-w3cjs": "~1.3",
+      "http-server": "~0.11",
       "jshint": "~2.9",
       "merge-stream": "~1.0"
    }

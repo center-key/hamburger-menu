@@ -50,16 +50,28 @@ publishSample() {
    test -w $publishFolder && copyWebFiles
    }
 
+runTests() {
+   cd $projectHome
+   npm test
+   echo
+   }
+
+openWebBrowser() {
+   url=http://localhost:9776/spec
+   test -z $(pgrep -f 9776) && npm run web-server  #to shutdown web server: pkill -f 9776
+   pgrep -fl 9776
+   echo "Opening:"
+   echo "   $url"
+   echo
+   sleep 2
+   open $url
+   }
+
 echo
 echo "Task Runner"
 echo "==========="
 info
-cd $projectHome
-npm test
-echo
 releaseInstructions
 publishSample
-sleep 2
-echo "Opening:\n   spec/index.html"
-open spec/index.html
-echo
+runTests
+openWebBrowser
