@@ -100,4 +100,4 @@ This library has been tested on iPhones and Androids.  If you encounter a bug or
 
 ### License
 
-[MIT](LICENSE.txt) or WTFPL (your choice)
+[MIT](LICENSE.txt)

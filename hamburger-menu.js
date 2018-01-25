@@ -1,8 +1,8 @@
-////////////////////////////////////////////////
-// Hamburger Menu ☰ A responsive CSS solution //
-// github.com/center-key/hamburger-menu       //
-// MIT or WTFPL (your choice)                 //
-////////////////////////////////////////////////
+/*!
+Hamburger Menu ☰ A responsive CSS solution
+github.com/center-key/hamburger-menu
+License: MIT
+*/
 
 // To automatically set the current state, add the "data-menu" attribute to each <li> tag
 // in the Hamburger Menu and to the <main> tag.

@@ -1,8 +1,8 @@
-/**********************************************/
-/* Hamburger Menu ☰ A responsive CSS solution */
-/* github.com/center-key/hamburger-menu       */
-/* MIT or WTFPL (your choice)                 */
-/**********************************************/
+/*!
+Hamburger Menu ☰ A responsive CSS solution
+github.com/center-key/hamburger-menu
+License: MIT
+*/
 
 /*
 Structure for Hamburger Menu:
@@ -74,7 +74,7 @@ nav.hamburger-menu ul ul a {
    font-size: 0.8rem;
    padding: 4px 15px 4px 24px;
    }
-@media (max-width: 667px) {  /* selects iPhone 6/6s/7 landscape and anything narrower */
+@media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
    body {
       padding: 2rem 0.5rem 0rem 0.5rem;
       cursor: pointer;  /* enables closing menu */
