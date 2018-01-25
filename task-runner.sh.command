@@ -35,6 +35,21 @@ releaseInstructions() {
    echo
    }
 
+publishSample() {
+   cd $projectHome
+   publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '{ print $2 }')
+   publishFolder=$publishWebRoot/centerkey.com
+   copyWebFiles() {
+      echo "Publishing:"
+      mkdir -p $publishFolder/hamburger-menu/dist
+      mkdir -p $publishFolder/hamburger-menu/spec
+      cp -v dist/* $publishFolder/hamburger-menu/dist
+      cp -v spec/* $publishFolder/hamburger-menu/spec
+      echo
+      }
+   test -w $publishFolder && copyWebFiles
+   }
+
 echo
 echo "Task Runner"
 echo "==========="
@@ -43,6 +58,7 @@ cd $projectHome
 npm test
 echo
 releaseInstructions
+publishSample
 sleep 2
 echo "Opening:\n   spec/index.html"
 open spec/index.html
