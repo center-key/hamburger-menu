@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "description": "A responsive CSS solution for a hamburger menu",
    "license": "MIT",
    "main": "dist/hamburger-menu.css",
@@ -9,11 +9,13 @@
    "bugs": "https://github.com/center-key/hamburger-menu/issues",
    "docs": "https://github.com/center-key/hamburger-menu#readme",
    "keywords": [
-      "mobile",
-      "responsive",
-      "hamburger",
+      "css",
+      "hamburger-menu",
       "menu",
-      "css"
+      "mobile-first",
+      "mobile-web",
+      "responsive",
+      "ui"
    ],
    "author": {
       "name": "Center Key",

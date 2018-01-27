@@ -6,7 +6,6 @@ const jsHint =      require('gulp-jshint');
 const mergeStream = require('merge-stream');
 const w3cJs =       require('gulp-w3cjs');
 
-
 const htmlHintConfig = { 'attr-value-double-quotes': false };
 const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: true, jquery: true };
 

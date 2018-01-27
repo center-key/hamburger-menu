@@ -43,7 +43,7 @@ Include the CSS and JavaScript:
 <script src=hamburger-menu.js></script>
 ```
 
-...or install with npm:
+...you can install with **npm**:
 
 ```
 $ npm install hamburger-menu
