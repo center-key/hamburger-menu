@@ -16,27 +16,26 @@ Structure for Hamburger Menu:
 */
 
 /* Base */
-html {
-   font-size: 100%;
-   font-family: system-ui, geneva, tahoma, sans-serif;
-   }
 body {
-   padding: 0rem 2rem 0rem 8rem;  /* adjust left padding to provide enough space for menu */
+   padding: 0rem 2rem 0rem 8rem;     /* adjust left padding to provide enough space for menu */
    margin: 0px;
    }
 
 /* Hamburger Menu Colors */
 nav.hamburger-menu a {
-   color: gainsboro;              /* menu font color */
+   color: gainsboro;                 /* menu font color */
    }
 nav.hamburger-menu .hamburger,
 nav.hamburger-menu aside {
-   background-color: black;       /* menu background color */
+   background-color: seagreen;       /* menu background color */
+   }
+nav.hamburger-menu li.current >a {
+   border-color: white;              /* border color for selected menu item */
    }
 nav.hamburger-menu li.current >a,
 nav.hamburger-menu li a:hover {
-   color: white;                  /* menu font highlight color on hover */
-   background-color: dimgray;     /* menu background highlight color on hover */
+   color: white;                     /* menu font highlight color on hover */
+   background-color: darkseagreen;   /* menu background highlight color on hover */
    }
 
 /* Menu style and behavior */
@@ -57,6 +56,10 @@ nav.hamburger-menu ul {
    list-style: none;
    padding: 0px;
    margin: 0px;
+   }
+nav.hamburger-menu li a {
+   border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent;
    }
 nav.hamburger-menu li.current >a {
    cursor: default;
