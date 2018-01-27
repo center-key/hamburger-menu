@@ -11,9 +11,9 @@ Structure for Hamburger Menu:
             li a
 */
 
-/* Hamburger Menu width and colors (override to customize) */
+/* [override section below to customize] */
+/* Hamburger Menu width and colors */
 body {
-   padding: 0px;
    padding-right: 50px;              /* gutter on left and right sides of the main content */
    padding-left: 200px;              /* set to "padding-right" plus "width" of aside */
    }
@@ -36,8 +36,10 @@ nav.hamburger-menu li a:hover {
    background-color: darkseagreen;   /* menu background highlight color on hover */
    }
 
-/* Hamburger Menu style and behavior (usually should not be overriden) */
+/* Hamburger Menu style and behavior (override these settings with caution) */
 body {
+   padding-top: 0px;
+   padding-bottom: 0px;
    margin: 0px;
    }
 nav.hamburger-menu .hamburger {
