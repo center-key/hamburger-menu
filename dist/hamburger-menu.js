@@ -1,4 +1,4 @@
-/*! HamburgerMenu v0.1.1 ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
+/*! HamburgerMenu v0.1.2 ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
 
 var hamburgerMenu = {
    setup: function() {
