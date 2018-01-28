@@ -1,6 +1,6 @@
 {
-   "name": "hamburger-menu",
-   "version": "0.0.3",
+   "name": "HamburgerMenu",
+   "version": "0.1.0",
    "description": "A responsive CSS solution for a hamburger menu",
    "license": "MIT",
    "main": "dist/hamburger-menu.css",
@@ -10,6 +10,8 @@
    "docs": "https://github.com/center-key/hamburger-menu#readme",
    "keywords": [
       "css",
+      "hamburger",
+      "hamburger-button",
       "hamburger-menu",
       "menu",
       "mobile-first",

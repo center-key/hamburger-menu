@@ -1,7 +1,7 @@
-/*! Hamburger Menu ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
+/*! HamburgerMenu ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
 
 /*
-Structure for Hamburger Menu:
+Structure for HamburgerMenu:
    nav.hamburger-menu
       a.hamburger
       aside
@@ -12,7 +12,7 @@ Structure for Hamburger Menu:
 */
 
 /* [override section below to customize] */
-/* Hamburger Menu width and colors */
+/* HamburgerMenu width and colors */
 body {
    padding-right: 50px;              /* gutter on left and right sides of the main content */
    padding-left: 200px;              /* set to "padding-right" plus "width" of aside */
@@ -36,7 +36,7 @@ nav.hamburger-menu li a:hover {
    background-color: darkseagreen;   /* menu background highlight color on hover */
    }
 
-/* Hamburger Menu style and behavior (override these settings with caution) */
+/* HamburgerMenu style and behavior (override these settings with caution) */
 body {
    padding-top: 0px;
    padding-bottom: 0px;
