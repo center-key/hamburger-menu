@@ -56,6 +56,17 @@ Include the **HamburgerMenu** CSS and JavaScript:
 ...
 ```
 
+...or from the jsDelivr CDN:
+
+```html
+...
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/hamburger-menu@0.1/dist/hamburger-menu.min.css>
+...
+<script src=https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.1/dist/hamburger-menu.min.js></script>
+...
+```
+
 ...the **HamburgerMenu** files can be installed using **npm**:
 
 ```terminal

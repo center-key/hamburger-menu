@@ -1,10 +1,12 @@
 // hamburger-menu
 
+const cssNano =     require('cssnano');
 const gulp =        require('gulp');
 const header =      require('gulp-header');
 const htmlHint =    require('gulp-htmlhint');
 const jsHint =      require('gulp-jshint');
 const mergeStream = require('merge-stream');
+const postCss =     require('gulp-postcss');
 const rename =      require("gulp-rename");
 const uglify =      require('gulp-uglify');
 const w3cJs =       require('gulp-w3cjs');
@@ -34,6 +36,18 @@ const analyze = {
    };
 
 const minify = {
+   css: function() {
+      return mergeStream(
+          gulp.src('src/hamburger-menu.css')
+            .pipe(header(banner + '\n'))
+            .pipe(gulp.dest('dist')),
+          gulp.src('src/hamburger-menu.css')
+            .pipe(rename('hamburger-menu.min.css'))
+            .pipe(postCss([cssNano()]))
+            .pipe(header(banner))
+            .pipe(gulp.dest('dist'))
+         );
+      },
    js: function() {
       return gulp.src('src/hamburger-menu.js')
          .pipe(header(banner + '\n'))
@@ -43,7 +57,10 @@ const minify = {
          .pipe(header(banner))
          .pipe(gulp.dest('dist'));
       },
+   all: function() {
+      return mergeStream(minify.css(), minify.js());
+      }
    };
 
 gulp.task('lint', analyze.all);
-gulp.task('build', minify.js);
+gulp.task('build', minify.all);
