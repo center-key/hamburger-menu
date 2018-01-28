@@ -6,9 +6,12 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
 [![Build Status](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
 
-Hamburger menus should be used with caution as they can impair user interaction.  As they say, *"Out of sight, out of mind"*.
+Hamburger button menus should be used with caution as they can impair user interaction.
+As they say, *"Out of sight, out of mind"*.
 
-When you do need a hamburger menu, this solution uses CSS to replace the navigation menu with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.  Tapping the hamburger reveals the navigation menu with smooth CSS animation.
+When you do need a hamburger button menu, this solution uses CSS to replace the navigation menu
+with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.
+Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
 ### A) Take it for spin
 
@@ -21,7 +24,12 @@ Try it out:<br>
 
 ### B) Usage
 
-Example HTML for **HamburgerMenu**:
+See the example in the
+[`index.html` test page](https://github.com/center-key/hamburger-menu/blob/master/spec/index.html)
+or follow the instructions below.
+
+Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
+for your website:
 
 ```html
 <nav class=hamburger-menu>
@@ -37,20 +45,20 @@ Example HTML for **HamburgerMenu**:
 </nav>
 ````
 
-Modify the menu items (`<li>`) as appropriate for your website.
-
-Include the CSS and JavaScript:
+Include the **HamburgerMenu** CSS and JavaScript:
 
 ```html
+...
 <link rel=stylesheet href=hamburger-menu.css>
 ...
 <script src=https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js></script>
 <script src=hamburger-menu.js></script>
+...
 ```
 
-...**HamburgerMenu** can be installed using **npm**:
+...the **HamburgerMenu** files can be installed using **npm**:
 
-```
+```terminal
 $ npm install hamburger-menu
 ```
 
@@ -88,7 +96,9 @@ nav.hamburger-menu li a:hover {
 
 **HamburgerMenu** automatically highlights the selected menu item.
 
-To turn off automatic highlighting, do not load `hamburger-menu.js` file.
+Turn off automatic highlighting by *either*:
+1. Not loading `hamburger-menu.js` file
+1. Adding the class `disable-auto-highlight` to the `<aside>` tag
 
 A menu item can be highlighted by adding the class `current` to the appropriate `<li>` tag in the
 HTML or programmatically after the page has been loaded.
@@ -105,16 +115,15 @@ or
 $('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
 ````
 
-**Note:**
-To support archaic web browsers, add polyfills for both
+**Note:**<br>
+To support archaic web browsers, add a polyfill for
 `[URL](https://www.npmjs.com/package/url-polyfill)`
-and
-`[endsWith](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith#Polyfill)`
 to your website.
 
 ### E) Removing jQuery dependency
 
-The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
+The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery
+and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
@@ -123,7 +132,8 @@ document.addEventListener('click', () => {});  //workaround for sticky hover on 
 ### F) Issues
 
 This library has been tested on iPhone and Android mobile devices.
-If you encounter a bug or have a question, submit an [issue](https://github.com/center-key/hamburger-menu/issues).
+If you encounter a bug or have a question, submit an
+[issue](https://github.com/center-key/hamburger-menu/issues).
 
 ### G) License
 

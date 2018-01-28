@@ -3,12 +3,20 @@
 var hamburgerMenu = {
    setup: function() {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
-      var currentUrl = new URL(window.location.href);
+      var current;
       function isCurrent(i, elem) {
-         var linkUrl = new URL($(elem).attr('href'), currentUrl);
-         return window.location.pathname.endsWith(linkUrl.pathname);
+         var linkUrl = new URL($(elem).attr('href'), current.url);
+         return linkUrl.pathname.replace(/[/]$/, '') === current.path;
          }
-      $('nav.hamburger-menu ul li >a').filter(isCurrent).first().parent().addClass('current');
+      function autoHighlight() {
+         current = {
+            url: new URL(window.location.href),
+            path: window.location.pathname.replace(/[/]$/, '')
+            };
+         $('nav.hamburger-menu li >a').filter(isCurrent).first().closest('li').addClass('current');
+         }
+      if (!$('nav.hamburger-menu aside').hasClass('disable-auto-highlight'))
+         autoHighlight();
       }
    };
 
