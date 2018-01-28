@@ -1,13 +1,14 @@
-/*! Hamburger Menu ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
-
-// To automatically set the current state, add the "data-menu" attribute to each <li> tag
-// in the Hamburger Menu and to the <main> tag.
+/*! HamburgerMenu ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
 
 var hamburgerMenu = {
    setup: function() {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
-      var menuItem = $('main').data().menu;  //use "data-menu" attribute to set current menu item
-      $('nav.hamburger-menu li[data-menu=' + menuItem + ']').addClass('current');
+      var currentUrl = new URL(window.location.href);
+      function isCurrent(i, elem) {
+         var linkUrl = new URL($(elem).attr('href'), currentUrl);
+         return window.location.pathname.endsWith(linkUrl.pathname);
+         }
+      $('nav.hamburger-menu ul li >a').filter(isCurrent).first().parent().addClass('current');
       }
    };
 
