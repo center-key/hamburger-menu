@@ -17,6 +17,7 @@ Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
 Try it out:<br>
 [centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)
+(manually resize your desktop browser to the smallest width to simulate a mobile device)
 
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
@@ -25,8 +26,8 @@ Try it out:<br>
 ### B) Usage
 
 See the
-[**x3000.html** test page](https://github.com/center-key/hamburger-menu/blob/master/spec/products/x3000.html)
-for an example or follow the instructions below.
+[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/products/x3000.html)
+test page for an example or follow the instructions below.
 
 Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
 for your website:
@@ -114,13 +115,13 @@ Turn off automatic highlighting by *either*:
 A menu item can be highlighted by adding the class `current` to the appropriate `<li>` element in
 the HTML or programmatically after the page has been loaded.
 
-Examples of highlighting the menu item for "**Page 2**":
+Example of highlighting the menu item for "**Page 2**":
 
 ```html
-         <li class=current><a href=page2.html>Page 2</a></li>
+<li class=current><a href=page2.html>Page 2</a></li>
 ````
 
-or
+...and an equivalent example using jQuery:
 
 ```javascript
 $('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
