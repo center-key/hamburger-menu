@@ -24,9 +24,9 @@ Try it out:<br>
 
 ### B) Usage
 
-See the example in the
-[`index.html` test page](https://github.com/center-key/hamburger-menu/blob/master/spec/index.html)
-or follow the instructions below.
+See the
+[**x3000.html** test page](https://github.com/center-key/hamburger-menu/blob/master/spec/products/x3000.html)
+for an example or follow the instructions below.
 
 Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
 for your website:
@@ -108,11 +108,11 @@ nav.hamburger-menu li a:hover {
 **HamburgerMenu** automatically highlights the selected menu item.
 
 Turn off automatic highlighting by *either*:
-1. Not loading `hamburger-menu.js` file
-1. Adding the class `disable-auto-highlight` to the `<aside>` tag
+1. Not loading the `hamburger-menu.js` file
+1. Adding the class `disable-auto-highlight` to the `<aside>` element
 
-A menu item can be highlighted by adding the class `current` to the appropriate `<li>` tag in the
-HTML or programmatically after the page has been loaded.
+A menu item can be highlighted by adding the class `current` to the appropriate `<li>` element in
+the HTML or programmatically after the page has been loaded.
 
 Examples of highlighting the menu item for "**Page 2**":
 
@@ -128,7 +128,7 @@ $('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
 
 **Note:**<br>
 To support archaic web browsers, add a polyfill for
-`[URL](https://www.npmjs.com/package/url-polyfill)`
+[URL](https://www.npmjs.com/package/url-polyfill)
 to your website.
 
 ### E) Removing jQuery dependency
