@@ -60,25 +60,23 @@ nav.hamburger-menu ul {
    padding: 0px;
    margin: 0px;
    }
-nav.hamburger-menu li a {
-   border-top: 1px solid transparent;
-   border-bottom: 1px solid transparent;
-   }
 nav.hamburger-menu li.current >a {
    cursor: default;
    }
-nav.hamburger-menu a {
+nav.hamburger-menu li a {
    display: block;
    font-size: 1.1rem;
    font-weight: bold;
    text-align: left;
    text-decoration: none;
-   padding: 10px 15px 10px 8px;
+   border-top: 1px solid transparent;
+   border-bottom: 1px solid transparent;
+   padding: 10px 0px 10px 15px;
    transition: all 0.4s;
    }
 nav.hamburger-menu ul ul a {
    font-size: 0.8rem;
-   padding: 4px 15px 4px 24px;
+   padding: 4px 0px 4px 30px;
    }
 @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
    body {
@@ -94,6 +92,8 @@ nav.hamburger-menu ul ul a {
       top: 0px;
       left: 0px;
       font-size: 1.4rem;
+      font-weight: bold;
+      text-decoration: none;
       padding: 6px 10px 8px 8px;
       }
    nav.hamburger-menu .hamburger:not(:hover) {

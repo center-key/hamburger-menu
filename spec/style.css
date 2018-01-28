@@ -8,3 +8,10 @@ html {
    font-size: 100%;
    font-family: system-ui, sans-serif;
    }
+
+nav.hamburger-menu li >a >i[data-icon] {
+   width: 1.5em;
+   }
+nav.hamburger-menu li.current >a >i[data-icon] {
+   color: slateblue;
+   }
