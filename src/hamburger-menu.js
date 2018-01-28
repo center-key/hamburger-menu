@@ -1,5 +1,3 @@
-/*! HamburgerMenu v0.1.1 ☰ github.com/center-key/hamburger-menu ☰ License: MIT */
-
 var hamburgerMenu = {
    setup: function() {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
