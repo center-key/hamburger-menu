@@ -9,9 +9,9 @@ html {
    font-family: system-ui, sans-serif;
    }
 
-nav.hamburger-menu li >a >i[data-icon] {
+nav.hamburger-menu aside ul li i[data-icon] {
    width: 1.5em;
    }
-nav.hamburger-menu li.current >a >i[data-icon] {
+nav.hamburger-menu aside ul li.current >*:first-child >i[data-icon] {
    color: slateblue;
    }
