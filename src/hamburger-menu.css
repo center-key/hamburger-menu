@@ -4,9 +4,9 @@ Structure for HamburgerMenu:
       a.hamburger
       aside
          ul
-            li a
-            li a
-            li a
+            li a|span
+            li a|span
+            li a|span
 */
 
 /* [override section below to customize] */
@@ -18,18 +18,23 @@ body {
 nav.hamburger-menu aside {
    width: 150px;                     /* use "width: auto" to automatically adjust to menu items */
    }
-nav.hamburger-menu a {
+nav.hamburger-menu a.hamburger,
+nav.hamburger-menu aside ul li,
+nav.hamburger-menu aside ul li a {
    color: gainsboro;                 /* menu font color */
    }
-nav.hamburger-menu .hamburger,
+nav.hamburger-menu a.hamburger,
 nav.hamburger-menu aside {
    background-color: seagreen;       /* menu background color */
    }
-nav.hamburger-menu li.current >a {
+nav.hamburger-menu aside ul li.current >a,
+nav.hamburger-menu aside ul li.current >span {
    border-color: white;              /* border color for selected menu item */
    }
-nav.hamburger-menu li.current >a,
-nav.hamburger-menu li a:hover {
+nav.hamburger-menu aside ul li.current >span,
+nav.hamburger-menu aside ul li.current >a,
+nav.hamburger-menu aside ul li span:hover,
+nav.hamburger-menu aside ul li a:hover {
    color: white;                     /* menu font highlight color on hover */
    background-color: darkseagreen;   /* menu background highlight color on hover */
    }
@@ -40,7 +45,7 @@ body {
    padding-bottom: 0px;
    margin: 0px;
    }
-nav.hamburger-menu .hamburger {
+nav.hamburger-menu a.hamburger {
    display: none;
    }
 nav.hamburger-menu aside {
@@ -53,15 +58,13 @@ nav.hamburger-menu aside {
    margin: 0px;
    overflow-y: scroll;
    }
-nav.hamburger-menu ul {
+nav.hamburger-menu aside ul {
    list-style: none;
    padding: 0px;
    margin: 0px;
    }
-nav.hamburger-menu li.current >a {
-   cursor: default;
-   }
-nav.hamburger-menu li a {
+nav.hamburger-menu aside ul li a,  /* menu item contents */
+nav.hamburger-menu aside ul li span {
    display: block;
    font-size: 1.1rem;
    font-weight: bold;
@@ -71,8 +74,14 @@ nav.hamburger-menu li a {
    border-bottom: 1px solid transparent;
    padding: 10px 0px 10px 15px;
    transition: all 0.4s;
+   cursor: pointer;
    }
-nav.hamburger-menu ul ul a {
+nav.hamburger-menu aside ul li.current >a,  /* highlighted menu item */
+nav.hamburger-menu aside ul li.current >span {
+   cursor: default;
+   }
+nav.hamburger-menu aside ul ul li a,  /* nested menu item */
+nav.hamburger-menu aside ul ul li span {
    font-size: 0.8rem;
    padding: 4px 0px 4px 30px;
    }
@@ -84,7 +93,7 @@ nav.hamburger-menu ul ul a {
    nav.hamburger-menu {
       cursor: auto;
       }
-   nav.hamburger-menu .hamburger {
+   nav.hamburger-menu a.hamburger {
       display: block;
       position: absolute;
       top: 0px;
@@ -94,10 +103,10 @@ nav.hamburger-menu ul ul a {
       text-decoration: none;
       padding: 6px 10px 8px 8px;
       }
-   nav.hamburger-menu .hamburger:not(:hover) {
+   nav.hamburger-menu a.hamburger:not(:hover) {
       transition: opacity 0.5s 0.8s;  /* delay to allow menu time to hide */
       }
-   nav.hamburger-menu .hamburger:hover {
+   nav.hamburger-menu a.hamburger:hover {
       opacity: 0;
       }
    nav.hamburger-menu aside {
