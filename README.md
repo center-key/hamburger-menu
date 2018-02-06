@@ -16,8 +16,8 @@ Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 ### A) Take it for spin
 
 Try it out:<br>
-[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)
-(manually resize your desktop browser to the smallest width to simulate a mobile device)
+[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)<br>
+*(manually resize your desktop browser to the smallest width to simulate a mobile device)*
 
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
@@ -87,18 +87,17 @@ body {
 nav.hamburger-menu aside {
    width: 150px;                     /* use "width: auto" to automatically adjust to menu items */
    }
-nav.hamburger-menu a {
+nav.hamburger-menu {
    color: gainsboro;                 /* menu font color */
-   }
-nav.hamburger-menu .hamburger,
-nav.hamburger-menu aside {
    background-color: seagreen;       /* menu background color */
    }
-nav.hamburger-menu li.current >a {
+nav.hamburger-menu aside ul li.current {
    border-color: white;              /* border color for selected menu item */
    }
-nav.hamburger-menu li.current >a,
-nav.hamburger-menu li a:hover {
+nav.hamburger-menu aside ul li.current >span,
+nav.hamburger-menu aside ul li.current >a,
+nav.hamburger-menu aside ul li span:hover,
+nav.hamburger-menu aside ul li a:hover {
    color: white;                     /* menu font highlight color on hover */
    background-color: darkseagreen;   /* menu background highlight color on hover */
    }
