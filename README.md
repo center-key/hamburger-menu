@@ -26,7 +26,7 @@ Try it out:<br>
 ### B) Usage
 
 See the
-[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/products/x3000.html)
+[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/multi-page/products/x3000.html)
 test page for an example or follow the instructions below.
 
 Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
@@ -81,25 +81,25 @@ Change the width and colors by adding the CSS below into your website and modify
 ```css
 /* HamburgerMenu width and colors */
 body {
-   padding-right: 50px;              /* gutter on left and right sides of the main content */
-   padding-left: 200px;              /* set to "padding-right" plus "width" of aside */
+   padding-right: 50px;         /* gutter on left and right sides of page */
+   padding-left: 200px;         /* set to "padding-right" + "width"(aside) */
    }
 nav.hamburger-menu aside {
-   width: 150px;                     /* use "width: auto" to automatically adjust to menu items */
+   width: 150px;                /* menu width */
    }
 nav.hamburger-menu {
-   color: gainsboro;                 /* menu font color */
-   background-color: seagreen;       /* menu background color */
+   color: gainsboro;            /* menu font color */
+   background-color: seagreen;  /* menu background color */
    }
 nav.hamburger-menu aside ul li.current {
-   border-color: white;              /* border color for selected menu item */
+   border-color: white;         /* border color for selected menu item */
    }
 nav.hamburger-menu aside ul li.current >span,
 nav.hamburger-menu aside ul li.current >a,
-nav.hamburger-menu aside ul li span:hover,
-nav.hamburger-menu aside ul li a:hover {
-   color: white;                     /* menu font highlight color on hover */
-   background-color: darkseagreen;   /* menu background highlight color on hover */
+nav.hamburger-menu aside ul li >span:hover,
+nav.hamburger-menu aside ul li >a:hover {
+   color: white;                /* menu font highlight color */
+   background-color: darkseagreen;   /* menu background highlight color */
    }
 ```
 
