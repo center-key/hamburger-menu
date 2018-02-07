@@ -43,8 +43,8 @@ publishSample() {
       echo "Publishing:"
       mkdir -p $publishFolder/hamburger-menu/dist
       mkdir -p $publishFolder/hamburger-menu/spec
-      cp -v dist/* $publishFolder/hamburger-menu/dist
-      cp -v spec/* $publishFolder/hamburger-menu/spec
+      cp -v  dist/* $publishFolder/hamburger-menu/dist
+      cp -vR spec/* $publishFolder/hamburger-menu/spec
       echo
       }
    test -w $publishFolder && copyWebFiles
