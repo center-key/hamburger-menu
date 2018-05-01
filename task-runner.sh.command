@@ -30,7 +30,7 @@ releaseInstructions() {
    echo "   git tag --annotate --force --message 'Stable release' v$version"
    echo "   git remote --verbose"
    echo "   git push origin --tags --force"
-   echo "   git tag"
+   echo "   git tag | tail -10"
    echo "   npm publish"
    echo
    }
