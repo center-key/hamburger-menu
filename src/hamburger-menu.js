@@ -9,11 +9,11 @@ var hamburgerMenu = {
       var nav = $('nav.hamburger-menu');
       function autoHighlightMultiPage() {
          var current = {
-            url: new URL(window.location.href),
+            url: new window.URL(window.location.href),
             path: window.location.pathname.replace(/[/]$/, '')
             };
          function isCurrent(i, elem) {
-            var linkUrl = new URL($(elem).attr('href'), current.url);
+            var linkUrl = new window.URL($(elem).attr('href'), current.url);
             return linkUrl.pathname.replace(/[/]$/, '') === current.path;
             }
          nav.find('li >a').filter(isCurrent).first().closest('li').addClass('current');
