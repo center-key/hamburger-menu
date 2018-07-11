@@ -16,7 +16,7 @@ Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 ### A) Take it for spin
 
 Try it out:<br>
-[centerkey.com/hamburger-menu](http://centerkey.com/hamburger-menu/spec)<br>
+[centerkey.com/hamburger-menu](https://centerkey.com/hamburger-menu/spec)<br>
 *(manually resize your desktop browser to the smallest width to simulate a mobile device)*
 
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
