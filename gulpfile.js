@@ -13,7 +13,7 @@ const w3cJs =       require('gulp-w3cjs');
 
 const pkg = require('./package.json');
 const banner = '/*! HamburgerMenu v' + pkg.version +
-   ' ☰ github.com/center-key/hamburger-menu ☰ License: MIT */\n';
+   ' ☰ github.com/center-key/hamburger-menu ☰ MIT License */\n';
 const htmlHintConfig = { 'attr-value-double-quotes': false };
 const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: true, jquery: true };
 
@@ -62,5 +62,5 @@ const minify = {
       }
    };
 
-gulp.task('lint', analyze.all);
+gulp.task('lint',  analyze.all);
 gulp.task('build', minify.all);

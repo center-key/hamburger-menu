@@ -8,7 +8,7 @@
 
 projectHome=$(cd $(dirname $0); pwd)
 
-info() {
+setupTools() {
    # Check for Node.js installation and download project dependencies
    cd $projectHome
    pwd
@@ -50,7 +50,7 @@ publishSample() {
    test -w $publishFolder && copyWebFiles
    }
 
-runTests() {
+runSpecs() {
    cd $projectHome
    npm test
    echo
@@ -70,8 +70,8 @@ openWebBrowser() {
 echo
 echo "Task Runner"
 echo "==========="
-info
+setupTools
 releaseInstructions
 publishSample
-runTests
+runSpecs
 openWebBrowser
