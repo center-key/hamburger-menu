@@ -4,7 +4,7 @@
    "description": "A responsive CSS solution for a hamburger menu",
    "license": "MIT",
    "main": "dist/hamburger-menu.min.css",
-   "repository": "center-key/hamburger-menu",
+   "repository": "github:center-key/hamburger-menu",
    "homepage": "https://github.com/center-key/hamburger-menu",
    "bugs": "https://github.com/center-key/hamburger-menu/issues",
    "docs": "https://github.com/center-key/hamburger-menu#readme",
