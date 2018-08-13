@@ -4,7 +4,7 @@
 ###############
 
 # To make this file runnable:
-#    $ chmod +x *.sh.command
+#     $ chmod +x *.sh.command
 
 projectHome=$(cd $(dirname $0); pwd)
 
@@ -35,19 +35,20 @@ releaseInstructions() {
    echo
    }
 
-publishSample() {
+publishWebFiles() {
    cd $projectHome
    publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F\" '{ print $2 }')
-   publishFolder=$publishWebRoot/centerkey.com
-   copyWebFiles() {
+   publishSite=$publishWebRoot/centerkey.com
+   publishFolder=$publishSite/hamburger-menu
+   publish() {
       echo "Publishing:"
-      mkdir -p $publishFolder/hamburger-menu/dist
-      mkdir -p $publishFolder/hamburger-menu/spec
-      cp -v  dist/* $publishFolder/hamburger-menu/dist
-      cp -vR spec/* $publishFolder/hamburger-menu/spec
+      mkdir -p $publishFolder/dist
+      mkdir -p $publishFolder/spec
+      cp -v  dist/* $publishFolder/dist
+      cp -vR spec/* $publishFolder/spec
       echo
       }
-   test -w $publishFolder && copyWebFiles
+   test -w $publishSite && publish
    }
 
 runSpecs() {
@@ -72,6 +73,6 @@ echo "Task Runner"
 echo "==========="
 setupTools
 releaseInstructions
-publishSample
+publishWebFiles
 runSpecs
 openWebBrowser
