@@ -6,11 +6,14 @@
 # To make this file runnable:
 #     $ chmod +x *.sh.command
 
+banner="Hamburger Menu"
 projectHome=$(cd $(dirname $0); pwd)
 
 setupTools() {
-   # Check for Node.js installation and download project dependencies
    cd $projectHome
+   echo
+   echo $banner
+   echo $(echo $banner | sed -e "s/./=/g")
    pwd
    echo
    echo "Node.js:"
@@ -42,10 +45,12 @@ publishWebFiles() {
    publishFolder=$publishSite/hamburger-menu
    publish() {
       echo "Publishing:"
+      echo $publishFolder
       mkdir -p $publishFolder/dist
       mkdir -p $publishFolder/spec
-      cp -v  dist/* $publishFolder/dist
-      cp -vR spec/* $publishFolder/spec
+      cp -R dist/* $publishFolder/dist
+      cp -R spec/* $publishFolder/spec
+      ls -o $publishFolder
       echo
       }
    test -w $publishSite && publish
@@ -57,10 +62,22 @@ runSpecs() {
    echo
    }
 
-openWebBrowser() {
-   url=http://localhost:9776/spec
-   test -z $(pgrep -f 9776) && npm run web-server  #to shutdown web server: pkill -f 9776
-   pgrep -fl 9776
+setupWebServer() {
+   cd $projectHome
+   port=$(grep web-server package.json | sed -e "s/[^0-9]//g")
+   # Requires package.json script: "web-server": "http-server -p 8080 &"
+   echo "Web Server (indexzero/http-server on node):"
+   test -z $(pgrep -f $projectHome) && npm run web-server
+   pgrep -fl http-server
+   echo "To stop web server:"
+   echo "   $ pgrep -fl http-server"
+   echo "   $ pkill -f $projectHome"
+   echo
+   }
+
+openBrowser() {
+   cd $projectHome
+   url=http://localhost:$port/spec
    echo "Opening:"
    echo "   $url"
    echo
@@ -68,11 +85,9 @@ openWebBrowser() {
    open $url
    }
 
-echo
-echo "Task Runner"
-echo "==========="
 setupTools
 releaseInstructions
 publishWebFiles
 runSpecs
-openWebBrowser
+setupWebServer  #port: ☰ -> &#9776; -> 9776
+openBrowser
