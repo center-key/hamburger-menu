@@ -127,7 +127,7 @@ $('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
 ````
 
 **Note:**<br>
-To support archaic web browsers, add a polyfill for
+To support old legacy web browsers, add a polyfill for
 [URL](https://www.npmjs.com/package/url-polyfill)
 to your website.
 
