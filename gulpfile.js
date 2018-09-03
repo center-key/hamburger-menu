@@ -1,27 +1,30 @@
 // hamburger-menu
 
-const cssNano =     require('cssnano');
-const gulp =        require('gulp');
-const header =      require('gulp-header');
-const htmlHint =    require('gulp-htmlhint');
-const jsHint =      require('gulp-jshint');
-const mergeStream = require('merge-stream');
-const postCss =     require('gulp-postcss');
-const rename =      require("gulp-rename");
-const uglify =      require('gulp-uglify');
-const w3cJs =       require('gulp-w3cjs');
+// Imports
+const cssNano =          require('cssnano');
+const gulp =             require('gulp');
+const header =           require('gulp-header');
+const htmlHint =         require('gulp-htmlhint');
+const jsHint =           require('gulp-jshint');
+const mergeStream =      require('merge-stream');
+const postCss =          require('gulp-postcss');
+const rename =           require("gulp-rename");
+const uglify =           require('gulp-uglify');
+const w3cHtmlValidator = require('gulp-w3cjs');
 
+// Setup
 const pkg = require('./package.json');
 const banner = '/*! HamburgerMenu v' + pkg.version +
    ' ☰ github.com/center-key/hamburger-menu ☰ MIT License */\n';
 const htmlHintConfig = { 'attr-value-double-quotes': false };
 const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: true, jquery: true };
 
+// Tasks
 const analyze = {
    html: function() {
       return gulp.src('spec/*.html')
-         .pipe(w3cJs())
-         .pipe(w3cJs.reporter())
+         .pipe(w3cHtmlValidator())
+         .pipe(w3cHtmlValidator.reporter())
          .pipe(htmlHint(htmlHintConfig))
          .pipe(htmlHint.reporter());
       },
@@ -34,7 +37,6 @@ const analyze = {
       return mergeStream(analyze.html(), analyze.js());
       }
    };
-
 const minify = {
    css: function() {
       return mergeStream(
@@ -62,5 +64,6 @@ const minify = {
       }
    };
 
+// Gulp
 gulp.task('lint',  analyze.all);
 gulp.task('build', minify.all);
