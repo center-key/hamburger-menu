@@ -1,16 +1,16 @@
 // hamburger-menu
 
 // Imports
-const cssNano =          require('cssnano');
-const gulp =             require('gulp');
-const header =           require('gulp-header');
-const htmlHint =         require('gulp-htmlhint');
-const jsHint =           require('gulp-jshint');
-const mergeStream =      require('merge-stream');
-const postCss =          require('gulp-postcss');
-const rename =           require("gulp-rename");
-const uglify =           require('gulp-uglify');
-const w3cHtmlValidator = require('gulp-w3cjs');
+const cssNano =       require('cssnano');
+const gulp =          require('gulp');
+const header =        require('gulp-header');
+const htmlHint =      require('gulp-htmlhint');
+const htmlValidator = require('gulp-w3c-html-validator');
+const jsHint =        require('gulp-jshint');
+const mergeStream =   require('merge-stream');
+const postCss =       require('gulp-postcss');
+const rename =        require("gulp-rename");
+const uglify =        require('gulp-uglify');
 
 // Setup
 const pkg = require('./package.json');
@@ -23,10 +23,10 @@ const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: tr
 const analyze = {
    html: function() {
       return gulp.src('spec/*.html')
-         .pipe(w3cHtmlValidator())
-         .pipe(w3cHtmlValidator.reporter())
          .pipe(htmlHint(htmlHintConfig))
-         .pipe(htmlHint.reporter());
+         .pipe(htmlHint.reporter())
+         .pipe(htmlValidator())
+         .pipe(htmlValidator.reporter());
       },
    js: function() {
       return gulp.src('src/hamburger-menu.js')
