@@ -3,6 +3,7 @@ _A responsive CSS solution_
 
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/hamburger-menu/blob/master/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
+[![Dependencies](https://david-dm.org/center-key/hamburger-menu/status.svg)](https://david-dm.org/center-key/hamburger-menu)
 [![Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
 [![Build](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
 

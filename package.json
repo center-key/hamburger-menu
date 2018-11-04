@@ -8,6 +8,7 @@
    "homepage": "https://github.com/center-key/hamburger-menu",
    "bugs": "https://github.com/center-key/hamburger-menu/issues",
    "docs": "https://github.com/center-key/hamburger-menu#readme",
+   "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "css",
       "hamburger",
@@ -19,10 +20,6 @@
       "responsive",
       "ui"
    ],
-   "author": {
-      "name": "Center Key",
-      "url": "https://centerkey.com"
-   },
    "jshintConfig": {
       "esversion": 6,
       "strict": "implied",
