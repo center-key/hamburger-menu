@@ -21,7 +21,7 @@ nav.hamburger-menu aside {
    }
 nav.hamburger-menu {
    color: gainsboro;            /* menu font color */
-   background-color: seagreen;  /* menu background color */
+   background-color: teal;      /* menu background color */
    }
 nav.hamburger-menu aside ul li.current {
    border-color: white;         /* border color for selected menu item */
@@ -31,7 +31,7 @@ nav.hamburger-menu aside ul li.current >a,
 nav.hamburger-menu aside ul li >span:hover,
 nav.hamburger-menu aside ul li >a:hover {
    color: white;                /* menu font highlight color */
-   background-color: darkseagreen;  /* menu background highlight color */
+   background-color: darkcyan;  /* menu background highlight color */
    }
 /******************************************************************************/
 

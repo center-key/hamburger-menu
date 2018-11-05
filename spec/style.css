@@ -13,5 +13,5 @@ nav.hamburger-menu aside ul li i.font-icon {
    width: 1.5em;
    }
 nav.hamburger-menu aside ul li.current >*:first-child >i.font-icon {
-   color: slateblue;
+   color: gold;
    }
