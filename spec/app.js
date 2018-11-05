@@ -5,6 +5,10 @@ License: MIT
 */
 
 const app = {
+   actionClick(event) {
+      const title = $(event.target).closest('li').find('span').first().text()
+      $('main >h1').hide().text(title).fadeIn();
+      },
    setupIcons: function() {
       function getName(elem) { return elem.data().icon || elem.data().brand; }
       function makeIcon(i, elem) { $(elem).addClass('font-icon fa-' + getName($(elem))); }
@@ -13,6 +17,8 @@ const app = {
       },
    setup: function() {
       app.setupIcons();
+      if (/single-page-app/.test(window.location.pathname))
+        $('nav.hamburger-menu aside ul li').on({ click: app.actionClick })
       }
    };
 
