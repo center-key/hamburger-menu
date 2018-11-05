@@ -1,4 +1,4 @@
-/*! HamburgerMenu v0.2.2 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
+/*! HamburgerMenu v0.2.3 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
 
 var hamburgerMenu = {
    selectItem: function(event) {

@@ -1,4 +1,4 @@
-/*! HamburgerMenu v0.2.2 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
+/*! HamburgerMenu v0.2.3 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
 
 /*
 Structure for HamburgerMenu:
@@ -11,6 +11,7 @@ Structure for HamburgerMenu:
             li a|span
 */
 
+/******************************************************************************/
 /* [override section below to customize] */
 /* HamburgerMenu width and colors */
 body {
@@ -22,7 +23,7 @@ nav.hamburger-menu aside {
    }
 nav.hamburger-menu {
    color: gainsboro;            /* menu font color */
-   background-color: seagreen;  /* menu background color */
+   background-color: teal;      /* menu background color */
    }
 nav.hamburger-menu aside ul li.current {
    border-color: white;         /* border color for selected menu item */
@@ -32,8 +33,9 @@ nav.hamburger-menu aside ul li.current >a,
 nav.hamburger-menu aside ul li >span:hover,
 nav.hamburger-menu aside ul li >a:hover {
    color: white;                /* menu font highlight color */
-   background-color: darkseagreen;   /* menu background highlight color */
+   background-color: darkcyan;  /* menu background highlight color */
    }
+/******************************************************************************/
 
 /* HamburgerMenu style and behavior (override these settings with caution) */
 body {
@@ -56,6 +58,7 @@ nav.hamburger-menu aside {
    padding: 0px;
    margin: 0px;
    overflow-y: scroll;
+   z-index: 5000;
    }
 nav.hamburger-menu aside ul {
    list-style: none;
