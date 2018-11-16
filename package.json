@@ -25,13 +25,15 @@
       "strict": "implied",
       "undef": true,
       "unused": true,
+      "browser": true,
+      "jquery": true,
       "node": true,
       "mocha": true
    },
    "scripts": {
       "web-server": "http-server -p 9776 &",
-      "pretest": "jshint gulpfile.js && gulp build",
-      "test": "gulp lint"
+      "pretest": "jshint gulpfile.js spec/*.js",
+      "test": "gulp lint && gulp build"
    },
    "dependencies": {
       "jquery": "~3.3"
@@ -44,6 +46,7 @@
       "gulp-jshint": "~2.1",
       "gulp-postcss": "~8.0",
       "gulp-rename": "~1.4",
+      "gulp-size": "~3.0",
       "gulp-uglify": "~3.0",
       "gulp-w3c-html-validator": "~1.4",
       "http-server": "~0.11",

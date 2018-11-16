@@ -6,7 +6,7 @@ License: MIT
 
 const app = {
    actionClick(event) {
-      const title = $(event.target).closest('li').find('span').first().text()
+      const title = $(event.target).closest('li').find('span').first().text();
       $('main >h1').hide().text(title).fadeIn();
       },
    setupIcons: function() {
@@ -18,7 +18,7 @@ const app = {
    setup: function() {
       app.setupIcons();
       if (/single-page-app/.test(window.location.pathname))
-        $('nav.hamburger-menu aside ul li').on({ click: app.actionClick })
+        $('nav.hamburger-menu aside ul li').on({ click: app.actionClick });
       }
    };
 

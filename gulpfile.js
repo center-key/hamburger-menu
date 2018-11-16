@@ -10,6 +10,7 @@ const jsHint =        require('gulp-jshint');
 const mergeStream =   require('merge-stream');
 const postCss =       require('gulp-postcss');
 const rename =        require("gulp-rename");
+const size =          require("gulp-size");
 const uglify =        require('gulp-uglify');
 
 // Setup
@@ -22,16 +23,18 @@ const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: tr
 // Tasks
 const analyze = {
    html: function() {
-      return gulp.src('spec/*.html')
+      return gulp.src('spec/**/*.html')
          .pipe(htmlHint(htmlHintConfig))
          .pipe(htmlHint.reporter())
          .pipe(htmlValidator())
-         .pipe(htmlValidator.reporter());
+         .pipe(htmlValidator.reporter())
+         .pipe(size({ showFiles: true }));
       },
    js: function() {
       return gulp.src('src/hamburger-menu.js')
          .pipe(jsHint(jsHintConfig))
-         .pipe(jsHint.reporter());
+         .pipe(jsHint.reporter())
+         .pipe(size({ showFiles: true }));
       },
    all: function() {
       return mergeStream(analyze.html(), analyze.js());
