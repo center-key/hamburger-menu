@@ -1,3 +1,5 @@
+// HamburgerMenu - MIT License
+
 var hamburgerMenu = {
    selectItem: function(event) {
       var item = $(event.target).closest('li');
