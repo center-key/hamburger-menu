@@ -5,17 +5,17 @@ License: MIT
 */
 
 const app = {
-   actionClick(event) {
+   actionClick: (event) => {
       const title = $(event.target).closest('li').find('span').first().text();
       $('main >h1').hide().text(title).fadeIn();
       },
-   setupIcons: function() {
-      function getName(elem) { return elem.data().icon || elem.data().brand; }
-      function makeIcon(i, elem) { $(elem).addClass('font-icon fa-' + getName($(elem))); }
+   setupIcons: () => {
+      const getName = (elem) => elem.data().icon || elem.data().brand;
+      const makeIcon = (i, elem) => $(elem).addClass('font-icon fa-' + getName($(elem)));
       $('i[data-icon]').addClass( 'fas').each(makeIcon);
       $('i[data-brand]').addClass('fab').each(makeIcon);
       },
-   setup: function() {
+   setup: () => {
       const makePageRed = () => $('body').css({ backgroundColor: 'pink' });
       window.onerror = makePageRed;
       app.setupIcons();
