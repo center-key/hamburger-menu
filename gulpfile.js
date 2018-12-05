@@ -9,7 +9,6 @@ const gulp =          require('gulp');
 const header =        require('gulp-header');
 const htmlHint =      require('gulp-htmlhint');
 const htmlValidator = require('gulp-w3c-html-validator');
-const jsHint =        require('gulp-jshint');
 const mergeStream =   require('merge-stream');
 const postCss =       require('gulp-postcss');
 const rename =        require("gulp-rename");
@@ -17,7 +16,6 @@ const replace =       require('gulp-replace');
 const size =          require("gulp-size");
 
 // Setup
-const jsHintConfig = { strict: 'implied', undef: true, unused: true, browser: true, jquery: true };
 const pkg =            require('./package.json');
 const home =           pkg.homepage.replace('https://', '');
 const banner =         'HamburgerMenu v' + pkg.version + ' ☰ ' + home + ' ☰ MIT License';
@@ -38,12 +36,6 @@ const task = {
          .pipe(htmlValidator.reporter())
          .pipe(size({ showFiles: true }));
       },
-   lintJs: () => {
-      return gulp.src('src/hamburger-menu.js')
-         .pipe(jsHint(jsHintConfig))
-         .pipe(jsHint.reporter())
-         .pipe(size({ showFiles: true }));
-      },
    buildDistribution: () => {
       const buildCss = () =>
          gulp.src('src/hamburger-menu.css')
@@ -51,6 +43,8 @@ const task = {
             .pipe(gulp.dest('dist'))
             .pipe(postCss([cssNano()]))
             .pipe(rename({ extname: '.min.css' }))
+            .pipe(replace(/(MIT License ..)/, '$1\n'))
+            .pipe(gap.appendText('\n'))
             .pipe(size({ showFiles: true }))
             .pipe(gulp.dest('dist'));
       const buildJs = () =>
@@ -72,5 +66,4 @@ const task = {
 
 // Gulp
 gulp.task('lint-html',  task.analyzeHtml);
-gulp.task('lint-js',    task.lintJs);
 gulp.task('build-dist', task.buildDistribution);

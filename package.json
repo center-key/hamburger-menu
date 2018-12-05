@@ -33,8 +33,8 @@
    },
    "scripts": {
       "web-server": "http-server -p 9776 &",
-      "pretest": "jshint gulpfile.js spec/*.js",
-      "test": "gulp lint-html && gulp lint-js && gulp build-dist"
+      "pretest": "jshint *.js src/*.js spec/*.js",
+      "test": "gulp lint-html && gulp build-dist"
    },
    "dependencies": {
       "jquery": "~3.3"
