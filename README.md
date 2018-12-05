@@ -40,10 +40,10 @@ Include the **HamburgerMenu** CSS and JavaScript:
 ...or from the jsDelivr CDN:
 ```html
 ...
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/hamburger-menu@0.1/dist/hamburger-menu.min.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css>
 ...
 <script src=https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.1/dist/hamburger-menu.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
 ...
 ```
 
@@ -88,7 +88,7 @@ nav.hamburger-menu aside {
    }
 nav.hamburger-menu {
    color: gainsboro;            /* menu font color */
-   background-color: seagreen;  /* menu background color */
+   background-color: teal;      /* menu background color */
    }
 nav.hamburger-menu aside ul li.current {
    border-color: white;         /* border color for selected menu item */
@@ -98,7 +98,7 @@ nav.hamburger-menu aside ul li.current >a,
 nav.hamburger-menu aside ul li >span:hover,
 nav.hamburger-menu aside ul li >a:hover {
    color: white;                /* menu font highlight color */
-   background-color: darkseagreen;   /* menu background highlight color */
+   background-color: darkcyan;  /* menu background highlight color */
    }
 ```
 

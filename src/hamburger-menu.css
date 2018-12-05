@@ -8,6 +8,7 @@ Structure for HamburgerMenu:
             li a|span
             li a|span
 */
+
 /* HamburgerMenu style and behavior (override these settings with caution) */
 body {
    padding-top: 0px;
