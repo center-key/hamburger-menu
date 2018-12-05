@@ -40,6 +40,8 @@ const task = {
       const buildCss = () =>
          gulp.src('src/hamburger-menu.css')
             .pipe(header(bannerCss))
+            .pipe(gap.appendFile('src/customize-style.css'))
+            .pipe(gap.appendText('\n'))
             .pipe(gulp.dest('dist'))
             .pipe(postCss([cssNano()]))
             .pipe(rename({ extname: '.min.css' }))

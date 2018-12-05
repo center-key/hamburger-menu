@@ -1,0 +1,25 @@
+/******************************************************************************/
+/* [override section below to customize] */
+/* HamburgerMenu width and colors */
+body {
+   padding-right: 50px;         /* gutter on left and right sides of page */
+   padding-left: 200px;         /* set to "padding-right" + "width"(aside) */
+   }
+nav.hamburger-menu aside {
+   width: 150px;                /* menu width */
+   }
+nav.hamburger-menu {
+   color: gainsboro;            /* menu font color */
+   background-color: teal;      /* menu background color */
+   }
+nav.hamburger-menu aside ul li.current {
+   border-color: white;         /* border color for selected menu item */
+   }
+nav.hamburger-menu aside ul li.current >span,
+nav.hamburger-menu aside ul li.current >a,
+nav.hamburger-menu aside ul li >span:hover,
+nav.hamburger-menu aside ul li >a:hover {
+   color: white;                /* menu font highlight color */
+   background-color: darkcyan;  /* menu background highlight color */
+   }
+/******************************************************************************/
