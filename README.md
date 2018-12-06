@@ -5,6 +5,7 @@ _A responsive CSS solution_
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
 [![Dependencies](https://david-dm.org/center-key/hamburger-menu/status.svg)](https://david-dm.org/center-key/hamburger-menu)
 [![Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
+[![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge)](https://www.jsdelivr.com/package/npm/hamburger-menu)
 [![Build](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
@@ -15,7 +16,6 @@ with a tappable hamburger icon on mobile devices or any browser with a sufficien
 Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
 ### A) Take it for spin
-
 Try it out:<br>
 https://centerkey.com/hamburger-menu/spec/multi-page<br>
 https://centerkey.com/hamburger-menu/spec/single-page-app<br>
@@ -26,7 +26,6 @@ https://centerkey.com/hamburger-menu/spec/single-page-app<br>
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/desktop-menu.png     height=300 alt=screenshot></kbd>
 
 ### B) Setup
-
 Include the **HamburgerMenu** CSS and JavaScript:
 ```html
 ...
@@ -36,8 +35,7 @@ Include the **HamburgerMenu** CSS and JavaScript:
 <script src=hamburger-menu.js></script>
 ...
 ```
-
-...or from the jsDelivr CDN:
+...or from the [jsDelivr CDN](https://www.jsdelivr.com/package/npm/hamburger-menu):
 ```html
 ...
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css>
@@ -53,7 +51,6 @@ $ npm install hamburger-menu
 ```
 
 ### C) Usage
-
 See the
 [**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/multi-page/products/x3000.html)
 test page for an example or follow the instructions below.
@@ -75,7 +72,6 @@ for your website:
 ````
 
 ### D) Customize
-
 Change the width and colors by adding the CSS below into your website and modifying it:
 ```css
 /* HamburgerMenu width and colors */
@@ -103,7 +99,6 @@ nav.hamburger-menu aside ul li >a:hover {
 ```
 
 ### E) Highlight menu item for current page
-
 **HamburgerMenu** automatically highlights the selected menu item.
 
 Turn off automatic highlighting by *either*:
@@ -129,7 +124,6 @@ To support old legacy web browsers, add a polyfill for
 to your website.
 
 ### F) Removing jQuery dependency
-
 The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery
 and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 ```javascript
@@ -137,7 +131,6 @@ document.addEventListener('click', () => {});  //workaround for sticky hover on 
 ```
 
 ### G) Issues
-
 This library has been tested on iPhone and Android mobile devices.
 If you encounter a bug or have a question, submit an
 [issue](https://github.com/center-key/hamburger-menu/issues).
