@@ -62,7 +62,7 @@ nav.hamburger-menu aside ul ul li span {
    padding: 4px 0px 4px 30px;
    }
 @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
-   body {
+   html body {
       padding: 35px 10px 0px 10px;
       cursor: pointer;  /* enables closing menu */
       }
