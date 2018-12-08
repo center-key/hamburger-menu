@@ -74,7 +74,7 @@ for your website:
 ### D) Customize
 Change the width and colors by adding the CSS below into your website and modifying it:
 ```css
-/* HamburgerMenu width and colors */
+/* HamburgerMenu ~ Custom width and colors */
 body {
    padding-right: 50px;         /* gutter on left and right sides of page */
    padding-left: 200px;         /* set to "padding-right" + "width"(aside) */
