@@ -3,7 +3,7 @@
    "version": "0.3.1",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
-   "main": "src/hamburger-menu.css",
+   "main": "dist/hamburger-menu.css",
    "browser": "dist/hamburger-menu.min.css",
    "repository": "github:center-key/hamburger-menu",
    "homepage": "https://github.com/center-key/hamburger-menu",
@@ -42,7 +42,7 @@
    "devDependencies": {
       "@babel/core": "~7.2",
       "@babel/preset-env": "~7.2",
-      "@fortawesome/fontawesome-free": "~5.5",
+      "@fortawesome/fontawesome-free": "~5.6",
       "cssnano": "~4.1",
       "dna.js": "~1.5",
       "gulp": "~4.0",
