@@ -5,6 +5,17 @@ const hamburgerMenu = {
       const item = $(event.target).closest('li');
       item.closest('aside').find('li').removeClass('current');
       item.addClass('current');
+      const nav = item.closest('.hamburger-menu').addClass('collapse-menu');
+      const eventRoutes = {};
+      const restoreAllowExand = () => {
+         nav.removeClass('collapse-menu');
+         console.log('restoreAllowExand');
+         $(window.document).off(eventRoutes);
+         };
+      eventRoutes.click =     restoreAllowExand;
+      eventRoutes.mousemove = restoreAllowExand;
+      const afterCurrentClick = 100;
+      window.setTimeout(() => $(window.document).on(eventRoutes), afterCurrentClick);
       },
    setup: () => {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile

@@ -93,7 +93,7 @@ nav.hamburger-menu aside ul ul li span {
    nav.hamburger-menu aside ul li {
       white-space: nowrap;
       }
-   nav.hamburger-menu:hover .hamburger + aside {
+   nav.hamburger-menu:not(.collapse-menu):hover .hamburger + aside {
       max-width: 400px;  /* used for animation -- must be greater than actual displayed width */
       overflow-y: scroll;
       }
