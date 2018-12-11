@@ -1,4 +1,4 @@
-/*! HamburgerMenu v0.3.1 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
+/*! HamburgerMenu v0.3.2 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
 /*
 Structure for HamburgerMenu:
    nav.hamburger-menu
@@ -94,7 +94,7 @@ nav.hamburger-menu aside ul ul li span {
    nav.hamburger-menu aside ul li {
       white-space: nowrap;
       }
-   nav.hamburger-menu:hover .hamburger + aside {
+   nav.hamburger-menu:not(.collapse-menu):hover .hamburger + aside {
       max-width: 400px;  /* used for animation -- must be greater than actual displayed width */
       overflow-y: scroll;
       }
@@ -102,7 +102,7 @@ nav.hamburger-menu aside ul ul li span {
 
 /******************************************************************************/
 /* [override this section to customize]                                       */
-/* HamburgerMenu - Custom width and colors                                    */
+/* HamburgerMenu ~ Custom width and colors                                    */
 body {
    padding-right: 50px;         /* gutter on left and right sides of page */
    padding-left: 200px;         /* set to "padding-right" + "width"(aside) */
