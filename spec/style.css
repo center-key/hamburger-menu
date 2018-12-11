@@ -7,6 +7,12 @@ License: MIT
 html {
    font-size: 100%;
    font-family: system-ui, sans-serif;
+   color: #333333;
+   }
+body >main >h1,
+body >main >h2,
+body >footer {
+   text-align: center;
    }
 
 nav.hamburger-menu aside ul li i.font-icon {
