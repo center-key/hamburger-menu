@@ -33,7 +33,7 @@
    },
    "scripts": {
       "web-server": "http-server -p 9776 &",
-      "pretest": "jshint *.js src/*.js spec/*.js",
+      "pretest": "jshint *.js src spec",
       "test": "gulp lint-html && gulp build-dist"
    },
    "dependencies": {
@@ -48,7 +48,7 @@
       "gulp": "~4.0",
       "gulp-append-prepend": "~1.0",
       "gulp-babel": "~8.0",
-      "gulp-babel-minify": "~0.5",
+      "babel-minify": "~0.5",
       "gulp-header": "~2.0",
       "gulp-htmlhint": "~2.2",
       "gulp-jshint": "~2.1",
