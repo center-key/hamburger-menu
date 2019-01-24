@@ -14,6 +14,7 @@
    body >main >nav { margin: 20px auto; max-width: 550px; }
    body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
    body >main >nav figcaption { margin-bottom: 20px; }
+   body >footer p:first-child { font-size: 1.3rem; font-weight: lighter; margin-bottom: 10px; }
    body >footer i.font-icon { font-size: 2.7rem; }
    body >footer figure { display: inline-block; width: 100px; }
    @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
@@ -48,6 +49,7 @@
 
 <footer>
    <div>
+      <p>v<span class=version-number></p>
       <p>
          <a href=https://github.com/center-key/hamburger-menu><i data-brand=github-alt></i></a>
       </p>
@@ -62,5 +64,7 @@
 <script src=https://cdn.jsdelivr.net/npm/jquery@3.3/dist/jquery.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/dna.js@1.5/dist/dna.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/web-ignition@1.1/dist/library.min.js></script>
+<script src=hamburger-menu.js></script>
+<script>$('.version-number').text(hamburgerMenu.version);</script>
 </body>
 </html>

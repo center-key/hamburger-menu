@@ -1,7 +1,7 @@
-//! HamburgerMenu v0.3.2 ☰ github.com/center-key/hamburger-menu ☰ MIT License
+//! HamburgerMenu v0.3.3 ☰ github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
-   version: '0.3.2',
+   version: '0.3.3',
    selectItem: (event) => {
       const item = $(event.target).closest('li');
       item.closest('aside').find('li').removeClass('current');
