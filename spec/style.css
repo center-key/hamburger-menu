@@ -13,6 +13,11 @@ body >main >h1,
 body >main >h2,
 body >footer {
    text-align: center;
+   padding: 20px;
+   }
+body >footer i.font-icon {
+   font-size: 1.4rem;
+   margin: 0px 8px;
    }
 
 nav.hamburger-menu aside ul li i.font-icon {

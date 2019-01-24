@@ -17,9 +17,7 @@ Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
 ### A) Take it for spin
 Try it out:<br>
-https://centerkey.com/hamburger-menu/spec/multi-page<br>
-https://centerkey.com/hamburger-menu/spec/single-page-app<br>
-*(manually resize your desktop browser to the smallest width to simulate a mobile device)*
+https://centerkey.com/hamburger-menu/spec
 
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
@@ -52,7 +50,7 @@ $ npm install hamburger-menu
 
 ### C) Usage
 See the
-[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/multi-page/products/x3000.html)
+[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/multipage/products/x3000.html)
 test page for an example or follow the instructions below.
 
 Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
