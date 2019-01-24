@@ -12,9 +12,14 @@
    body { text-align: center; color: gray; background-color: black; }
    body >header { margin-bottom: 40px; }
    body >main >nav { margin: 20px auto; max-width: 550px; }
-   body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 10px; }
+   body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
+   body >main >nav figcaption { margin-bottom: 20px; }
    body >footer i.font-icon { font-size: 2.7rem; }
    body >footer figure { display: inline-block; width: 100px; }
+   @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
+      body >header h1 { font-size: 1.2rem; }
+      body >main >nav i.font-icon { font-size: 6rem; }
+      }
 </style>
 </head>
 <body>
