@@ -69,24 +69,6 @@ releaseInstructions() {
    echo
    }
 
-publishWebFiles() {
-   cd $projectHome
-   publishWebRoot=$(grep ^DocumentRoot /private/etc/apache2/httpd.conf | awk -F'"' '{ print $2 }')
-   publishSite=$publishWebRoot/centerkey.com
-   publishFolder=$publishSite/hamburger-menu
-   publish() {
-      echo "Publishing:"
-      echo $publishFolder
-      mkdir -p $publishFolder/dist
-      mkdir -p $publishFolder/spec
-      cp -R dist/* $publishFolder/dist
-      cp -R spec/* $publishFolder/spec
-      ls -o $publishFolder
-      echo
-      }
-   test -w $publishSite && publish
-   }
-
 runSpecs() {
    cd $projectHome
    npm test
@@ -108,7 +90,7 @@ setupWebServer() {
 
 openBrowser() {
    cd $projectHome
-   url=http://localhost:$port/spec
+   url=http://localhost:$port/docs
    echo "Opening:"
    echo "   $url"
    echo
@@ -118,7 +100,6 @@ openBrowser() {
 
 setupTools
 releaseInstructions
-publishWebFiles
 runSpecs
 setupWebServer  #port: ☰ -> &#9776; -> 9776
 openBrowser
