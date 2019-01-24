@@ -1,6 +1,7 @@
 // HamburgerMenu - MIT License
 
 const hamburgerMenu = {
+   version: '[VERSION]',
    selectItem: (event) => {
       const item = $(event.target).closest('li');
       item.closest('aside').find('li').removeClass('current');
