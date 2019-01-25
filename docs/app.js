@@ -19,8 +19,8 @@ const app = {
       const makePageRed = () => $('body').css({ backgroundColor: 'pink' });
       window.onerror = makePageRed;
       app.setupIcons();
-      if (/single-page-app/.test(window.location.pathname))
-        $('nav.hamburger-menu aside ul li').on({ click: app.actionClick });
+      const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
+      $(window.document).on({ click: app.actionClick }, menuItemSelector);
       }
    };
 
