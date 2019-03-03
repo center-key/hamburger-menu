@@ -24,11 +24,11 @@ const hamburgerMenu = {
       const autoHighlightMultiPage = () => {
          const current = {
             url:  new window.URL(window.location.href),
-            path: window.location.pathname.replace(/[/]$/, '')
+            path: window.location.pathname.replace(/\/$/, '')
             };
          const isCurrent = (i, elem) => {
             const linkUrl = new window.URL($(elem).attr('href'), current.url);
-            return linkUrl.pathname.replace(/[/]$/, '') === current.path;
+            return linkUrl.pathname.replace(/\/$/, '') === current.path;
             };
          nav.find('li >a').filter(isCurrent).first().closest('li').addClass('current');
          };

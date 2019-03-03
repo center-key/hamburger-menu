@@ -22,7 +22,7 @@ const banner =         'HamburgerMenu v' + pkg.version + ' ☰ ' + home + ' ☰ 
 const bannerCss =      '/*! ' + banner + ' */\n';
 const bannerJs =       '//! ' + banner + '\n';
 const htmlHintConfig = { 'attr-value-double-quotes': false };
-const headerComments = /^[/][/].*\n/gm;
+const headerComments = /^\/\/.*\n/gm;
 const transpileES6 =   ['@babel/env', { modules: false }];
 const babelMinifyJs =  { presets: [transpileES6, 'minify'], comments: false };
 
