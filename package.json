@@ -22,8 +22,9 @@
       "ui"
    ],
    "jshintConfig": {
-      "esversion": 6,
+      "esversion": 9,
       "strict": "implied",
+      "eqeqeq": true,
       "undef": true,
       "unused": true,
       "browser": true,
@@ -37,7 +38,7 @@
       "test": "gulp lint-html && gulp build-dist"
    },
    "dependencies": {
-      "jquery": "~3.3"
+      "jquery": "~3.4"
    },
    "devDependencies": {
       "@babel/core": "~7.4",
