@@ -5,7 +5,7 @@ _A responsive CSS solution_
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
 [![Dependencies](https://david-dm.org/center-key/hamburger-menu/status.svg)](https://david-dm.org/center-key/hamburger-menu)
 [![Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
-[![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge)](https://www.jsdelivr.com/package/npm/hamburger-menu)
+[![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge?style=rounded)](https://www.jsdelivr.com/package/npm/hamburger-menu)
 [![Build](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
