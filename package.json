@@ -33,7 +33,7 @@
       "mocha": true
    },
    "scripts": {
-      "web-server": "http-server --port 9776 &",
+      "web-server": "lsof -P -i TCP:9776 || http-server --port 9776 &",
       "pretest": "jshint *.js src docs",
       "test": "gulp lint-html && gulp build-dist"
    },
