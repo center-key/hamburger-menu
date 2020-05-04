@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.3.3",
+   "version": "0.3.4",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "main": "dist/hamburger-menu.css",
