@@ -29,7 +29,7 @@ const babelMinifyJs =  { presets: [transpileES6, 'minify'], comments: false };
 // Tasks
 const task = {
    analyzeHtml() {
-      return gulp.src('spec/**/*.html')
+      return gulp.src('docs/**/*.html')
          .pipe(htmlHint(htmlHintConfig))
          .pipe(htmlHint.reporter())
          .pipe(htmlValidator())
