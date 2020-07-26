@@ -1,8 +1,8 @@
-//! HamburgerMenu v0.3.3 ☰ github.com/center-key/hamburger-menu ☰ MIT License
+//! HamburgerMenu v0.3.4 ☰ github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
-   version: '0.3.3',
-   selectItem: (event) => {
+   version: '0.3.4',
+   selectItem(event) {
       const item = $(event.target).closest('li');
       item.closest('aside').find('li').removeClass('current');
       item.addClass('current');
@@ -18,13 +18,13 @@ const hamburgerMenu = {
       const afterCurrentClick = 100;
       window.setTimeout(() => $(window.document).on(eventRoutes), afterCurrentClick);
       },
-   setup: () => {
+   setup() {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
       const nav = $('nav.hamburger-menu');
       const autoHighlightMultiPage = () => {
          const current = {
             url:  new window.URL(window.location.href),
-            path: window.location.pathname.replace(/\/$/, '')
+            path: window.location.pathname.replace(/\/$/, ''),
             };
          const isCurrent = (i, elem) => {
             const linkUrl = new window.URL($(elem).attr('href'), current.url);
@@ -40,7 +40,7 @@ const hamburgerMenu = {
          };
       if (!nav.find('>aside').hasClass('disable-auto-highlight'))
          autoHighlight();
-      }
+      },
    };
 
 $(hamburgerMenu.setup);

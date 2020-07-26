@@ -1,4 +1,4 @@
-/*! HamburgerMenu v0.3.3 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
+/*! HamburgerMenu v0.3.4 ☰ github.com/center-key/hamburger-menu ☰ MIT License */
 /*
 Structure for HamburgerMenu:
    nav.hamburger-menu
@@ -49,7 +49,7 @@ nav.hamburger-menu aside ul li span {
    border-top: 1px solid transparent;
    border-bottom: 1px solid transparent;
    padding: 10px 0px 10px 15px;
-   transition: all 0.4s;
+   transition: all 400ms;
    cursor: pointer;
    }
 nav.hamburger-menu aside ul li.current >a,  /* highlighted menu item */
@@ -62,7 +62,7 @@ nav.hamburger-menu aside ul ul li span {
    font-size: 0.8rem;
    padding: 4px 0px 4px 30px;
    }
-@media (max-width: 667px) {  /* selects iPhone 6/6s/7/8 landscape and anything narrower */
+@media (max-width: 667px) {  /* selects iPhone 6/6s/7/8/SE(2020) landscape and anything narrower */
    html body {
       padding: 35px 10px 0px 10px;
       cursor: pointer;  /* enables closing menu */
@@ -102,7 +102,7 @@ nav.hamburger-menu aside ul ul li span {
 
 /******************************************************************************/
 /* [override this section to customize]                                       */
-/* HamburgerMenu ~ Custom width and colors                                    */
+/* HamburgerMenu ☰ Custom width and colors                                    */
 body {
    padding-right: 50px;         /* gutter on left and right sides of page */
    padding-left: 200px;         /* set to "padding-right" + "width"(aside) */

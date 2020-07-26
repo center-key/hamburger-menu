@@ -19,7 +19,7 @@ body >footer i.font-icon {
    font-size: 1.6rem;
    color: teal;
    margin: 0px 8px;
-   transition: color 0.4s;
+   transition: color 400ms;
    }
 body >footer i.font-icon:hover {
    color: blueviolet;

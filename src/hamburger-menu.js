@@ -1,4 +1,4 @@
-// HamburgerMenu - MIT License
+// HamburgerMenu ☰ MIT License
 
 const hamburgerMenu = {
    version: '[VERSION]',
