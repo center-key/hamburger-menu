@@ -5,6 +5,9 @@
    "license": "MIT",
    "main": "dist/hamburger-menu.css",
    "browser": "dist/hamburger-menu.min.css",
+   "files": [
+      "dist"
+   ],
    "repository": "github:center-key/hamburger-menu",
    "homepage": "https://github.com/center-key/hamburger-menu",
    "bugs": "https://github.com/center-key/hamburger-menu/issues",
@@ -41,9 +44,9 @@
       "jquery": "~3.5"
    },
    "devDependencies": {
-      "@babel/core": "~7.11",
-      "@babel/preset-env": "~7.11",
-      "@fortawesome/fontawesome-free": "~5.14",
+      "@babel/core": "~7.12",
+      "@babel/preset-env": "~7.12",
+      "@fortawesome/fontawesome-free": "~5.15",
       "babel-minify": "~0.5",
       "cssnano": "~4.1",
       "dna.js": "~1.6",
@@ -61,7 +64,7 @@
       "http-server": "~0.12",
       "jshint": "~2.12",
       "merge-stream": "~2.0",
-      "postcss": "~8.0",
+      "postcss": "~8.1",
       "web-ignition": "~1.3"
    }
 }
