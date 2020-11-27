@@ -36,9 +36,10 @@
       "mocha": true
    },
    "scripts": {
-      "web-server": "lsof -P -i TCP:9776 || http-server --port 9776 &",
       "pretest": "jshint *.js src docs",
-      "test": "gulp lint-html && gulp build-dist"
+      "test": "gulp lint-html",
+      "posttest": "gulp build-dist",
+      "interactive": "npm test && browser-sync docs --watch"
    },
    "dependencies": {
       "jquery": "~3.5"
@@ -48,6 +49,7 @@
       "@babel/preset-env": "~7.12",
       "@fortawesome/fontawesome-free": "~5.15",
       "babel-minify": "~0.5",
+      "browser-sync": "~2.26",
       "cssnano": "~4.1",
       "dna.js": "~1.6",
       "gulp": "~4.0",
@@ -61,7 +63,6 @@
       "gulp-replace": "~1.0",
       "gulp-size": "~3.0",
       "gulp-w3c-html-validator": "~2.0",
-      "http-server": "~0.12",
       "jshint": "~2.12",
       "merge-stream": "~2.0",
       "postcss": "~8.1",

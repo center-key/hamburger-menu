@@ -28,6 +28,7 @@ const babelMinifyJs =  { presets: [transpileES6, 'minify'], comments: false };
 
 // Tasks
 const task = {
+
    analyzeHtml() {
       return gulp.src('docs/**/*.html')
          .pipe(htmlHint(htmlHintConfig))
@@ -36,6 +37,7 @@ const task = {
          .pipe(htmlValidator.reporter())
          .pipe(size({ showFiles: true }));
       },
+
    buildDistribution() {
       const buildCss = () =>
          gulp.src('src/hamburger-menu.css')
@@ -67,6 +69,7 @@ const task = {
             .pipe(gulp.dest('dist'));
       return mergeStream(buildCss(), buildJs());
       },
+
    };
 
 // Gulp
