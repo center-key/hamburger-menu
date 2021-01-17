@@ -3,6 +3,7 @@
    "version": "0.3.5",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
+   "type": "module",
    "main": "dist/hamburger-menu.css",
    "browser": "dist/hamburger-menu.min.css",
    "files": [
@@ -62,7 +63,7 @@
       "gulp-rename": "~2.0",
       "gulp-replace": "~1.0",
       "gulp-size": "~3.0",
-      "gulp-w3c-html-validator": "~2.0",
+      "gulp-w3c-html-validator": "~3.0",
       "jshint": "~2.12",
       "merge-stream": "~2.0",
       "postcss": "~8.2",

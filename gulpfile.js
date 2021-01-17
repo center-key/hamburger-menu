@@ -2,21 +2,22 @@
 // Gulp configuration and tasks
 
 // Imports
-const cssNano =       require('cssnano');
-const babel =         require('gulp-babel');
-const gap =           require('gulp-append-prepend');
-const gulp =          require('gulp');
-const header =        require('gulp-header');
-const htmlHint =      require('gulp-htmlhint');
-const htmlValidator = require('gulp-w3c-html-validator');
-const mergeStream =   require('merge-stream');
-const postCss =       require('gulp-postcss');
-const rename =        require("gulp-rename");
-const replace =       require('gulp-replace');
-const size =          require("gulp-size");
+import cssNano from     'cssnano';
+import babel from       'gulp-babel';
+import gap from         'gulp-append-prepend';
+import gulp from        'gulp';
+import header from      'gulp-header';
+import htmlHint from    'gulp-htmlhint';
+import mergeStream from 'merge-stream';
+import postCss from     'gulp-postcss';
+import rename from      'gulp-rename';
+import replace from     'gulp-replace';
+import size from        'gulp-size';
+import { htmlValidator } from 'gulp-w3c-html-validator';
+import { readFileSync } from 'fs';
 
 // Setup
-const pkg =            require('./package.json');
+const pkg =            JSON.parse(readFileSync('./package.json'));
 const home =           pkg.homepage.replace('https://', '');
 const banner =         'HamburgerMenu v' + pkg.version + ' ☰ ' + home + ' ☰ MIT License';
 const bannerCss =      '/*! ' + banner + ' */\n';
@@ -33,7 +34,7 @@ const task = {
       return gulp.src('docs/**/*.html')
          .pipe(htmlHint(htmlHintConfig))
          .pipe(htmlHint.reporter())
-         .pipe(htmlValidator())
+         .pipe(htmlValidator.analyzer())
          .pipe(htmlValidator.reporter())
          .pipe(size({ showFiles: true }));
       },
