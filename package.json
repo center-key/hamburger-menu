@@ -37,9 +37,9 @@
       "mocha": true
    },
    "scripts": {
-      "pretest": "jshint *.js src docs",
-      "test": "gulp lint-html",
-      "posttest": "gulp build-dist",
+      "pretest": "    jshint *.js src docs",
+      "test": "       gulp lint-html",
+      "posttest": "   gulp build-dist",
       "interactive": "npm test && browser-sync docs --watch"
    },
    "dependencies": {
