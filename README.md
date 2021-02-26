@@ -6,6 +6,7 @@ _A responsive CSS solution_
 [![Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
 [![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge?style=rounded)](https://www.jsdelivr.com/package/npm/hamburger-menu)
 [![Build](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
+[![Build](https://github.com/center-key/hamburger-menu/workflows/build/badge.svg)](https://github.com/center-key/hamburger-menu/actions?query=workflow%3Abuild)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
 As they say, *"Out of sight, out of mind"*.
