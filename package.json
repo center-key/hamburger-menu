@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.3.5",
+   "version": "0.3.6",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "type": "module",
@@ -43,7 +43,7 @@
       "interactive": "npm test && browser-sync docs --watch"
    },
    "dependencies": {
-      "jquery": "~3.5"
+      "jquery": "~3.6"
    },
    "devDependencies": {
       "@babel/core": "~7.13",
