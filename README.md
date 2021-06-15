@@ -1,11 +1,10 @@
 # &#9776;&nbsp; HamburgerMenu &nbsp;&#9776;
 _A responsive CSS solution_
 
-[![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/hamburger-menu/blob/master/LICENSE.txt)
+[![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/hamburger-menu/blob/main/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
 [![Vulnerabilities](https://snyk.io/test/github/center-key/hamburger-menu/badge.svg)](https://snyk.io/test/github/center-key/hamburger-menu)
 [![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge?style=rounded)](https://www.jsdelivr.com/package/npm/hamburger-menu)
-[![Build](https://travis-ci.org/center-key/hamburger-menu.svg)](https://travis-ci.org/center-key/hamburger-menu)
 [![Build](https://github.com/center-key/hamburger-menu/workflows/build/badge.svg)](https://github.com/center-key/hamburger-menu/actions?query=workflow%3Abuild)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
@@ -19,9 +18,9 @@ Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 Try it out:<br>
 https://hamburger-menu.js.org
 
-<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
-<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
-<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/master/screenshots/desktop-menu.png     height=300 alt=screenshot></kbd>
+<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
+<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
+<kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/desktop-menu.png     height=300 alt=screenshot></kbd>
 
 ### B) Setup
 Include the **HamburgerMenu** CSS and JavaScript:
@@ -50,7 +49,7 @@ $ npm install hamburger-menu
 
 ### C) Usage
 See the
-[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/master/spec/multipage/products/x3000.html)
+[**x3000.html**](https://github.com/center-key/hamburger-menu/blob/main/spec/multipage/products/x3000.html)
 test page for an example or follow the instructions below.
 
 Insert the following HTML into your web page and modify the menu items (`<li>`) as appropriate
