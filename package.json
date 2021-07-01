@@ -6,6 +6,7 @@
    "type": "module",
    "main": "dist/hamburger-menu.css",
    "browser": "dist/hamburger-menu.min.css",
+   "style": "dist/hamburger-menu.css",
    "files": [
       "dist"
    ],
@@ -50,9 +51,9 @@
       "@babel/preset-env": "~7.14",
       "@fortawesome/fontawesome-free": "~5.15",
       "babel-minify": "~0.5",
-      "browser-sync": "~2.26",
+      "browser-sync": "~2.27",
       "cssnano": "~5.0",
-      "dna.js": "~1.7",
+      "dna.js": "~1.8",
       "gulp": "~4.0",
       "gulp-append-prepend": "~1.0",
       "gulp-babel": "~8.0",
@@ -63,7 +64,7 @@
       "gulp-rename": "~2.0",
       "gulp-replace": "~1.1",
       "gulp-size": "~4.0",
-      "gulp-w3c-html-validator": "~3.2",
+      "gulp-w3c-html-validator": "~5.0",
       "jshint": "~2.13",
       "merge-stream": "~2.0",
       "postcss": "~8.3",
