@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.3.7",
+   "version": "0.3.8",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "type": "module",
