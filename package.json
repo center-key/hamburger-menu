@@ -4,8 +4,9 @@
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "type": "module",
-   "main": "dist/hamburger-menu.css",
-   "style": "dist/hamburger-menu.css",
+   "main": "dist/hamburger-menu.js",
+   "jsdelivr": "dist/hamburger-menu.min.js",
+   "style": "dist/hamburger-menu.min.css",
    "files": [
       "dist"
    ],
