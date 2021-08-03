@@ -2,18 +2,16 @@
 // Gulp configuration and tasks
 
 // Imports
-import cssNano from     'cssnano';
 import babel from       'gulp-babel';
+import cssNano from     'cssnano';
 import gap from         'gulp-append-prepend';
 import gulp from        'gulp';
 import header from      'gulp-header';
-import htmlHint from    'gulp-htmlhint';
 import mergeStream from 'merge-stream';
 import postCss from     'gulp-postcss';
 import rename from      'gulp-rename';
 import replace from     'gulp-replace';
 import size from        'gulp-size';
-import { htmlValidator } from 'gulp-w3c-html-validator';
 import { readFileSync } from 'fs';
 
 // Setup
@@ -22,22 +20,12 @@ const home =           pkg.homepage.replace('https://', '');
 const banner =         'HamburgerMenu v' + pkg.version + ' ☰ ' + home + ' ☰ MIT License';
 const bannerCss =      '/*! ' + banner + ' */\n';
 const bannerJs =       '//! ' + banner + '\n';
-const htmlHintConfig = { 'attr-value-double-quotes': false };
 const headerComments = /^\/\/.*\n/gm;
 const transpileES6 =   ['@babel/env', { modules: false }];
 const babelMinifyJs =  { presets: [transpileES6, 'minify'], comments: false };
 
 // Tasks
 const task = {
-
-   analyzeHtml() {
-      return gulp.src('docs/**/*.html')
-         .pipe(htmlHint(htmlHintConfig))
-         .pipe(htmlHint.reporter())
-         .pipe(htmlValidator.analyzer())
-         .pipe(htmlValidator.reporter())
-         .pipe(size({ showFiles: true }));
-      },
 
    buildDistribution() {
       const buildCss = () =>
@@ -74,5 +62,4 @@ const task = {
    };
 
 // Gulp
-gulp.task('lint-html',  task.analyzeHtml);
 gulp.task('build-dist', task.buildDistribution);
