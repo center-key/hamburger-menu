@@ -38,9 +38,16 @@
       "mocha": true
    },
    "scripts": {
-      "pretest": "    jshint . --exclude node_modules,dist",
-      "test": "       w3c-html-validator",
-      "posttest": "   gulp build-dist",
+      "step:01": "rimraf build dist **/.DS_Store",
+      "step:02": "jshint . --exclude node_modules,build,dist",
+      "step:05": "gulp minify-css",
+      "step:06": "cpy src/*.js build",
+      "step:07": "gulp minify-js",
+      "step:08": "add-dist-header build dist --delimiter=☰",
+      "step:09": "cpy dist/hamburger-menu.css docs",
+      "step:10": "cpy dist/hamburger-menu.js docs",
+      "pretest": "npm-run-all step:*",
+      "test": "w3c-html-validator",
       "interactive": "npm test && browser-sync docs --watch"
    },
    "dependencies": {
@@ -50,23 +57,24 @@
       "@babel/core": "~7.15",
       "@babel/preset-env": "~7.15",
       "@fortawesome/fontawesome-free": "~5.15",
+      "add-dist-header": "~0.1",
       "babel-minify": "~0.5",
       "browser-sync": "~2.27",
+      "cpy-cli": "~3.1",
       "cssnano": "~5.0",
       "dna.js": "~1.9",
       "gulp": "~4.0",
       "gulp-append-prepend": "~1.0",
       "gulp-babel": "~8.0",
-      "gulp-header": "~2.0",
-      "gulp-jshint": "~2.1",
       "gulp-postcss": "~9.0",
       "gulp-rename": "~2.0",
       "gulp-replace": "~1.1",
       "gulp-size": "~4.0",
       "jshint": "~2.13",
-      "merge-stream": "~2.0",
+      "npm-run-all2": "~5.0",
       "postcss": "~8.3",
-      "w3c-html-validator": "~0.7",
+      "rimraf": "~3.0",
+      "w3c-html-validator": "~0.8",
       "web-ignition": "~1.4"
    }
 }

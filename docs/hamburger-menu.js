@@ -1,7 +1,9 @@
-//! HamburgerMenu v0.3.8 ☰ github.com/center-key/hamburger-menu ☰ MIT License
+//! hamburger-menu v0.3.8 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
+
    version: '0.3.8',
+
    selectItem(event) {
       const item = $(event.target).closest('li');
       item.closest('aside').find('li').removeClass('current');
@@ -18,6 +20,7 @@ const hamburgerMenu = {
       const afterCurrentClick = 100;
       window.setTimeout(() => $(window.document).on(eventRoutes), afterCurrentClick);
       },
+
    setup() {
       $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
       const nav = $('nav.hamburger-menu');
@@ -41,6 +44,7 @@ const hamburgerMenu = {
       if (!nav.find('>aside').hasClass('disable-auto-highlight'))
          autoHighlight();
       },
+
    };
 
 $(hamburgerMenu.setup);
