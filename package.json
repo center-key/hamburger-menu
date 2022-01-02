@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.3.9",
+   "version": "0.4.0",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "type": "module",
@@ -54,8 +54,8 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "@babel/core": "~7.15",
-      "@babel/preset-env": "~7.15",
+      "@babel/core": "~7.16",
+      "@babel/preset-env": "~7.16",
       "@fortawesome/fontawesome-free": "~5.15",
       "add-dist-header": "~0.1",
       "babel-minify": "~0.5",
@@ -72,7 +72,7 @@
       "gulp-size": "~4.0",
       "jshint": "~2.13",
       "npm-run-all2": "~5.0",
-      "postcss": "~8.3",
+      "postcss": "~8.4",
       "rimraf": "~3.0",
       "w3c-html-validator": "~0.8",
       "web-ignition": "~1.4"
