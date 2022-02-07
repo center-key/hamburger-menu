@@ -54,7 +54,7 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "@babel/core": "~7.16",
+      "@babel/core": "~7.17",
       "@babel/preset-env": "~7.16",
       "@fortawesome/fontawesome-free": "~5.15",
       "add-dist-header": "~0.1",
@@ -74,7 +74,7 @@
       "npm-run-all2": "~5.0",
       "postcss": "~8.4",
       "rimraf": "~3.0",
-      "w3c-html-validator": "~0.8",
+      "w3c-html-validator": "~1.0",
       "web-ignition": "~1.4"
    }
 }
