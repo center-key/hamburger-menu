@@ -1,31 +1,39 @@
 <!doctype html>
 <html lang=en>
 <head>
-<meta charset=utf-8>
-<meta name=viewport    content="width=device-width, initial-scale=1">
-<meta name=robots      content="index, follow">
-<meta name=description content="Example uses of mobile-friendly hamburger drop-down menus">
-<title>HamburgerMenu &#9776; Specification Suite</title>
-<link rel=icon       href=https://centerkey.com/graphics/bookmark.png>
-<link rel=preconnect href=https://fonts.googleapis.com>
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1/css/all.min.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna.js@2.0/dist/dna.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/web-ignition@1.5/dist/reset.min.css>
-<style>
-   body { text-align: center; color: gray; background-color: black; }
-   body >header { margin-bottom: 40px; }
-   body >main >nav { margin: 20px auto; max-width: 550px; }
-   body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
-   body >main >nav figcaption { margin-bottom: 20px; }
-   body >footer p:first-child { font-size: 1.3rem; font-weight: lighter; margin-bottom: 10px; }
-   body >footer i.font-icon { font-size: 2.7rem; }
-   body >footer figure { display: inline-block; width: 100px; }
-   @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8/SE(2020) landscape and anything narrower */
-      body >header h1 { font-size: 1.2rem; }
-      body >main >nav i.font-icon { font-size: 6rem; }
-      }
-</style>
+   <meta charset=utf-8>
+   <meta name=viewport    content="width=device-width, initial-scale=1">
+   <meta name=robots      content="index, follow">
+   <meta name=description content="Example uses of mobile-friendly hamburger drop-down menus">
+   <title>HamburgerMenu &#9776; Specification Suite</title>
+   <link rel=icon       href=https://centerkey.com/graphics/bookmark.png>
+   <link rel=preconnect href=https://fonts.googleapis.com>
+   <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1/css/all.min.css>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna.js@2.0/dist/dna.css>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/web-ignition@1.5/dist/reset.min.css>
+   <style>
+      body { text-align: center; color: gray; background-color: black; }
+      body >header { margin-bottom: 40px; }
+      body >main >nav { margin: 20px auto; max-width: 550px; }
+      body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
+      body >main >nav figcaption { margin-bottom: 20px; }
+      body >footer p:first-child { font-size: 1.3rem; font-weight: lighter; margin-bottom: 10px; }
+      body >footer i.font-icon { font-size: 2.7rem; }
+      body >footer figure { display: inline-block; width: 100px; }
+      @media (max-width: 667px) {  /* selects iPhone 6/6s/7/8/SE(2020) landscape and anything narrower */
+         body >header h1 { font-size: 1.2rem; }
+         body >main >nav i.font-icon { font-size: 6rem; }
+         }
+   </style>
+   <script defer src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
+   <script defer src=https://cdn.jsdelivr.net/npm/dna.js@2.0/dist/dna.min.js></script>
+   <script defer src=https://cdn.jsdelivr.net/npm/web-ignition@1.5/dist/lib-x.min.js></script>
+   <script defer src=hamburger-menu.js></script>
+   <script>window.onerror = () => document.body.style.background = 'pink';</script>
+   <script data-on-load=displayVersion>
+      const displayVersion = () => $('.version-number').text(hamburgerMenu.version);
+   </script>
 </head>
 <body>
 
@@ -65,10 +73,5 @@
    </div>
 </footer>
 
-<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/dna.js@2.0/dist/dna.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/web-ignition@1.5/dist/lib-x.min.js></script>
-<script src=hamburger-menu.js></script>
-<script>$('.version-number').text(hamburgerMenu.version);</script>
 </body>
 </html>

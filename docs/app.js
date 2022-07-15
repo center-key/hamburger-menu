@@ -16,8 +16,6 @@ const app = {
       $('i[data-brand]').addClass('fab').each(makeIcon);
       },
    setup() {
-      const makePageRed = () => $('body').css({ backgroundColor: 'pink' });
-      window.onerror = makePageRed;
       app.setupIcons();
       const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
       $(window.document).on({ click: app.actionClick }, menuItemSelector);
