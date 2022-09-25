@@ -39,14 +39,14 @@
    },
    "scripts": {
       "step:01": "rimraf build dist **/.DS_Store",
-      "step:02": "jshint . --exclude node_modules,build,dist",
+      "step:02": "jshint . --exclude-path .gitignore",
       "step:05": "gulp minify-css",
-      "step:06": "cpy src/*.js build --flat=true",
+      "step:06": "copy-folder src --ext=.js build",
       "step:07": "gulp minify-js",
       "step:08": "add-dist-header build dist --delimiter=☰",
-      "step:09": "cpy dist/hamburger-menu.css docs --flat=true",
-      "step:10": "cpy dist/hamburger-menu.js docs --flat=true",
-      "step:11": "w3c-html-validator",
+      "step:09": "copy-file dist/hamburger-menu.css --folder docs",
+      "step:10": "copy-file dist/hamburger-menu.js --folder docs",
+      "step:11": "html-validator",
       "pretest": "npm-run-all step:*",
       "test": "mocha spec/*.spec.js",
       "interactive": "npm test && browser-sync docs --watch"
@@ -55,14 +55,15 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "@babel/core": "~7.18",
-      "@babel/preset-env": "~7.18",
-      "@fortawesome/fontawesome-free": "~6.1",
-      "add-dist-header": "~0.1",
+      "@babel/core": "~7.19",
+      "@babel/preset-env": "~7.19",
+      "@fortawesome/fontawesome-free": "~6.2",
+      "add-dist-header": "~0.2",
       "assert-deep-strict-equal": "~1.0",
       "babel-minify": "~0.5",
       "browser-sync": "~2.27",
-      "cpy-cli": "~4.1",
+      "copy-file-util": "~0.1",
+      "copy-folder-cli": "~0.1",
       "cssnano": "~5.1",
       "dna.js": "~2.0",
       "gulp": "~4.0",
@@ -74,10 +75,10 @@
       "gulp-size": "~4.0",
       "jshint": "~2.13",
       "mocha": "~10.0",
-      "npm-run-all2": "~5.0",
+      "npm-run-all2": "~6.0",
       "postcss": "~8.4",
       "rimraf": "~3.0",
-      "w3c-html-validator": "~1.0",
+      "w3c-html-validator": "~1.1",
       "web-ignition": "~1.5"
    }
 }

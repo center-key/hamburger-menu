@@ -14,7 +14,7 @@ When you do need a hamburger button menu, this solution uses CSS to replace the 
 with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.
 Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
-### A) Take it for spin
+## A) Take it for spin
 Try it out:<br>
 https://hamburger-menu.js.org
 
@@ -22,7 +22,7 @@ https://hamburger-menu.js.org
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/mobile-menu.png      height=300 alt=screenshot></kbd>
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/desktop-menu.png     height=300 alt=screenshot></kbd>
 
-### B) Setup
+## B) Setup
 Include the **HamburgerMenu** CSS and JavaScript:
 ```html
 ...
@@ -47,7 +47,7 @@ Include the **HamburgerMenu** CSS and JavaScript:
 $ npm install hamburger-menu
 ```
 
-### C) Usage
+## C) Usage
 See the
 [**x3000.html**](https://github.com/center-key/hamburger-menu/blob/main/spec/multipage/products/x3000.html)
 test page for an example or follow the instructions below.
@@ -66,9 +66,9 @@ for your website:
       </ul>
    </aside>
 </nav>
-````
+```
 
-### D) Customize
+## D) Customize
 Change the width and colors by adding the CSS below into your website and modifying it:
 ```css
 /* HamburgerMenu ☰ Custom width and colors */
@@ -95,7 +95,7 @@ nav.hamburger-menu aside ul li >a:hover {
    }
 ```
 
-### E) Highlight menu item for current page
+## E) Highlight menu item for current page
 **HamburgerMenu** automatically highlights the selected menu item.
 
 Turn off automatic highlighting by *either*:
@@ -108,26 +108,26 @@ the HTML or programmatically after the page has been loaded.
 Example of highlighting the menu item for "**Page 2**":
 ```html
 <li class=current><a href=page2.html>Page 2</a></li>
-````
+```
 
 ...and an equivalent example using jQuery:
 ```javascript
 $('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
-````
+```
 
 **Note:**<br>
 To support old legacy web browsers, add a polyfill for
 [URL](https://www.npmjs.com/package/url-polyfill)
 to your website.
 
-### F) Removing jQuery dependency
+## F) Removing jQuery dependency
 The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery
 and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
 ```
 
-### G) Issues
+## G) Issues
 This library has been tested on iPhone and Android mobile devices.
 If you encounter a bug or have a question, submit an
 [issue](https://github.com/center-key/hamburger-menu/issues).
