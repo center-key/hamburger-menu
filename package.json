@@ -45,7 +45,7 @@
       "step:02": "jshint . --exclude-path .gitignore",
       "step:05": "gulp minify-css",
       "step:06": "copy-folder src --ext=.js build",
-      "step:07": "gulp minify-js",
+      "step:07": "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js",
       "step:08": "add-dist-header build dist --delimiter=☰",
       "step:09": "copy-file dist/hamburger-menu.css --folder docs",
       "step:10": "copy-file dist/hamburger-menu.js --folder docs",
@@ -58,8 +58,6 @@
       "jquery": "~3.6"
    },
    "devDependencies": {
-      "@babel/core": "~7.19",
-      "@babel/preset-env": "~7.19",
       "@fortawesome/fontawesome-free": "~6.2",
       "add-dist-header": "~0.3",
       "assert-deep-strict-equal": "~1.0",
@@ -81,6 +79,7 @@
       "npm-run-all2": "~6.0",
       "postcss": "~8.4",
       "rimraf": "~3.0",
+      "uglify-js": "~3.17",
       "w3c-html-validator": "~1.1",
       "web-ignition": "~1.5"
    }
