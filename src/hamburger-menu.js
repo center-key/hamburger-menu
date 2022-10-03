@@ -13,24 +13,24 @@ const hamburgerMenu = {
       const restoreAllowExand = () => {
          nav.removeClass('collapse-menu');
          console.log('restoreAllowExand');
-         $(window.document).off(eventRoutes);
+         $(globalThis.document).off(eventRoutes);
          };
       eventRoutes.click =     restoreAllowExand;
       eventRoutes.mousemove = restoreAllowExand;
       const afterCurrentClick = 100;
-      window.setTimeout(() => $(window.document).on(eventRoutes), afterCurrentClick);
+      globalThis.setTimeout(() => $(globalThis.document).on(eventRoutes), afterCurrentClick);
       },
 
    setup() {
-      $(window.document).on({ click: $.noop });  //workaround for sticky hover on mobile
+      $(globalThis.document).on({ click: $.noop });  //workaround for sticky hover on mobile
       const nav = $('nav.hamburger-menu');
       const autoHighlightMultiPage = () => {
          const current = {
-            url:  new window.URL(window.location.href),
-            path: window.location.pathname.replace(/\/$/, ''),
+            url:  new globalThis.URL(globalThis.location.href),
+            path: globalThis.location.pathname.replace(/\/$/, ''),
             };
          const isCurrent = (i, elem) => {
-            const linkUrl = new window.URL($(elem).attr('href'), current.url);
+            const linkUrl = new globalThis.URL($(elem).attr('href'), current.url);
             return linkUrl.pathname.replace(/\/$/, '') === current.path;
             };
          nav.find('li >a').filter(isCurrent).first().closest('li').addClass('current');

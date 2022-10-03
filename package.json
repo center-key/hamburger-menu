@@ -35,7 +35,10 @@
       "browser": true,
       "jquery": true,
       "node": true,
-      "mocha": true
+      "mocha": true,
+      "globals": {
+         "globalThis": true
+      }
    },
    "scripts": {
       "step:01": "rimraf build dist **/.DS_Store",
@@ -58,7 +61,7 @@
       "@babel/core": "~7.19",
       "@babel/preset-env": "~7.19",
       "@fortawesome/fontawesome-free": "~6.2",
-      "add-dist-header": "~0.2",
+      "add-dist-header": "~0.3",
       "assert-deep-strict-equal": "~1.0",
       "babel-minify": "~0.5",
       "browser-sync": "~2.27",
