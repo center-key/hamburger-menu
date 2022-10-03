@@ -2,13 +2,13 @@
 
 // Imports
 import { assertDeepStrictEqual } from 'assert-deep-strict-equal';
-import { readdirSync } from 'fs';
+import fs from 'fs';
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 describe('The current files', () => {
 
    it('for the "dist" folder are correct', () => {
-      const actual = readdirSync('dist').sort();
+      const actual = fs.readdirSync('dist').sort();
       const expected = [
          'hamburger-menu.css',
          'hamburger-menu.js',
@@ -19,7 +19,7 @@ describe('The current files', () => {
       });
 
    it('for the "docs" folder are correct', () => {
-      const actual = readdirSync('docs').sort();
+      const actual = fs.readdirSync('docs').sort();
       const expected = [
          'CNAME',
          'app.js',
