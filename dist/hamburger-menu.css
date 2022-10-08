@@ -1,4 +1,4 @@
-/*! hamburger-menu v0.4.1 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License */
+/*! hamburger-menu v0.5.0 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License */
 
 /*
 Structure for HamburgerMenu:
@@ -100,7 +100,6 @@ nav.hamburger-menu aside ul ul li span {
       overflow-y: scroll;
       }
    }
-
 /******************************************************************************/
 /* [override this section to customize]                                       */
 /* HamburgerMenu ☰ Custom width and colors                                    */

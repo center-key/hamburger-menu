@@ -18,7 +18,7 @@ const app = {
    setup() {
       app.setupIcons();
       const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
-      $(window.document).on({ click: app.actionClick }, menuItemSelector);
+      $(globalThis.document).on({ click: app.actionClick }, menuItemSelector);
       },
    };
 
