@@ -43,7 +43,7 @@
    "scripts": {
       "step:01": "rimraf build dist **/.DS_Store",
       "step:02": "jshint . --exclude-path .gitignore",
-      "step:10": "files-replace src --ext=.css build --concat=hamburger-menu.css",
+      "step:10": "replacer src --ext=.css build --concat=hamburger-menu.css",
       "step:11": "csso build/hamburger-menu.css --output build/hamburger-menu.min.css",
       "step:12": "copy-folder src --ext=.js build",
       "step:13": "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js",
@@ -53,7 +53,7 @@
       "step:40": "html-validator",
       "pretest": "npm-run-all step:*",
       "test": "mocha spec/*.spec.js",
-      "interactive": "npm test && browser-sync docs --watch"
+      "interactive": "browser-sync docs --watch"
    },
    "dependencies": {
       "jquery": "~3.6"
@@ -64,10 +64,10 @@
       "assert-deep-strict-equal": "~1.0",
       "browser-sync": "~2.27",
       "copy-file-util": "~0.1",
-      "copy-folder-cli": "~0.1",
+      "copy-folder-util": "~0.2",
       "csso-cli": "~4.0",
-      "dna.js": "~2.0",
-      "files-replace": "~0.1",
+      "dna-engine": "~2.2",
+      "replacer-util": "~0.2",
       "jshint": "~2.13",
       "mocha": "~10.0",
       "npm-run-all2": "~6.0",
