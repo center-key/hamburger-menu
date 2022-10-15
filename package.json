@@ -27,7 +27,7 @@
       "ui"
    ],
    "jshintConfig": {
-      "esversion": 9,
+      "esversion": 11,
       "strict": "implied",
       "eqeqeq": true,
       "undef": true,
@@ -35,10 +35,7 @@
       "browser": true,
       "jquery": true,
       "node": true,
-      "mocha": true,
-      "globals": {
-         "globalThis": true
-      }
+      "mocha": true
    },
    "scripts": {
       "step:01": "rimraf build dist **/.DS_Store",
@@ -73,7 +70,7 @@
       "npm-run-all2": "~6.0",
       "rimraf": "~3.0",
       "uglify-js": "~3.17",
-      "w3c-html-validator": "~1.1",
+      "w3c-html-validator": "~1.2",
       "web-ignition": "~1.5"
    }
 }
