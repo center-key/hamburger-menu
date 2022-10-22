@@ -37,18 +37,22 @@
       "node": true,
       "mocha": true
    },
+   "runScriptsConfig": {
+      "build": [
+         "rimraf build dist **/.DS_Store",
+         "jshint . --exclude-path .gitignore",
+         "replacer src --ext=.css build --concat=hamburger-menu.css",
+         "csso build/hamburger-menu.css --output build/hamburger-menu.min.css",
+         "copy-folder src --ext=.js build",
+         "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js",
+         "add-dist-header build dist --delimiter=☰",
+         "copy-file dist/hamburger-menu.css --folder docs",
+         "copy-file dist/hamburger-menu.js --folder docs",
+         "html-validator"
+      ]
+   },
    "scripts": {
-      "step:01": "rimraf build dist **/.DS_Store",
-      "step:02": "jshint . --exclude-path .gitignore",
-      "step:10": "replacer src --ext=.css build --concat=hamburger-menu.css",
-      "step:11": "csso build/hamburger-menu.css --output build/hamburger-menu.min.css",
-      "step:12": "copy-folder src --ext=.js build",
-      "step:13": "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js",
-      "step:20": "add-dist-header build dist --delimiter=☰",
-      "step:30": "copy-file dist/hamburger-menu.css --folder docs",
-      "step:31": "copy-file dist/hamburger-menu.js --folder docs",
-      "step:40": "html-validator",
-      "pretest": "npm-run-all step:*",
+      "pretest": "run-scripts build",
       "test": "mocha spec/*.spec.js",
       "interactive": "browser-sync docs --watch"
    },
@@ -64,11 +68,11 @@
       "copy-folder-util": "~0.2",
       "csso-cli": "~4.0",
       "dna-engine": "~2.2",
-      "replacer-util": "~0.2",
       "jshint": "~2.13",
-      "mocha": "~10.0",
-      "npm-run-all2": "~6.0",
+      "mocha": "~10.1",
+      "replacer-util": "~0.2",
       "rimraf": "~3.0",
+      "run-scripts-util": "~0.1",
       "uglify-js": "~3.17",
       "w3c-html-validator": "~1.2",
       "web-ignition": "~1.5"
