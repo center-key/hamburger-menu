@@ -14,8 +14,8 @@ When you do need a hamburger button menu, this solution uses CSS to replace the 
 with a tappable hamburger icon on mobile devices or any browser with a sufficiently narrow screen.
 Tapping the hamburger reveals the navigation menu with smooth CSS animation.
 
-## A) Take it for spin
-Try it out:<br>
+## A) Try It Out
+Interactive example:<br>
 https://hamburger-menu.js.org
 
 <kbd><img src=https://raw.githubusercontent.com/center-key/hamburger-menu/main/screenshots/mobile-hamburger.png height=300 alt=screenshot align=left></kbd>
@@ -95,7 +95,7 @@ nav.hamburger-menu aside ul li >a:hover {
    }
 ```
 
-## E) Highlight menu item for current page
+## E) Highlight Menu Item for Current Page
 **HamburgerMenu** automatically highlights the selected menu item.
 
 Turn off automatic highlighting by *either*:
@@ -120,7 +120,7 @@ To support old legacy web browsers, add a polyfill for
 [URL](https://www.npmjs.com/package/url-polyfill)
 to your website.
 
-## F) Removing jQuery dependency
+## F) Removing jQuery Dependency
 The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery
 and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 ```javascript

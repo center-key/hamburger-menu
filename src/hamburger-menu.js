@@ -2,7 +2,7 @@
 
 const hamburgerMenu = {
 
-   version: '~~~version~~~',
+   version: '{{pkg.version}}',
 
    selectItem(event) {
       const item = $(event.target).closest('li');
