@@ -1,8 +1,8 @@
-//! hamburger-menu v0.5.0 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
+//! hamburger-menu v0.5.2 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
 
-   version: '0.5.0',
+   version: '0.5.2',
 
    selectItem(event) {
       const item = $(event.target).closest('li');
