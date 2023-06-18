@@ -28,7 +28,6 @@ Include the **HamburgerMenu** CSS and JavaScript:
 ...
 <link rel=stylesheet href=hamburger-menu.css>
 ...
-<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
 <script src=hamburger-menu.js></script>
 ...
 ```
@@ -37,7 +36,6 @@ Include the **HamburgerMenu** CSS and JavaScript:
 ...
 <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.css>
 ...
-<script src=https://cdn.jsdelivr.net/npm/jquery@3.6/dist/jquery.min.js></script>
 <script src=https://cdn.jsdelivr.net/npm/hamburger-menu@0.3/dist/hamburger-menu.min.js></script>
 ...
 ```
@@ -110,19 +108,13 @@ Example of highlighting the menu item for "**Page 2**":
 <li class=current><a href=page2.html>Page 2</a></li>
 ```
 
-...and an equivalent example using jQuery:
-```javascript
-$('nav.hamburger-menu').find('a[href=page2.html]').parent().addClass('current');
-```
-
 **Note:**<br>
 To support old legacy web browsers, add a polyfill for
 [URL](https://www.npmjs.com/package/url-polyfill)
 to your website.
 
-## F) Removing jQuery Dependency
-The `hamburger-menu.js` file depends on jQuery, but you can eliminate **both** jQuery
-and the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
+## F) hamburger-menu.js File is Optional
+You can the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
 ```

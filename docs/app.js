@@ -5,21 +5,41 @@ License: MIT
 */
 
 const app = {
-   actionClick(event) {
-      const title = $(event.target).closest('li').find('span').first().text();
-      $('main >h1').hide().text(title).fadeIn();
+   pulse(elem, text) {
+      elem.style.opacity =    '0';
+      elem.style.transition = 'all 0ms';
+      if (text !== undefined)
+         elem.textContent = text;
+      const animate = () => {
+         elem.style.opacity = '1';
+         elem.style.transition = 'all 500ms';
+         };
+      globalThis.requestAnimationFrame(animate);
       },
-   setupIcons() {
-      const getName = (elem) => elem.data().icon || elem.data().brand;
-      const makeIcon = (i, elem) => $(elem).addClass('font-icon fa-' + getName($(elem)));
-      $('i[data-icon]').addClass('fas').each(makeIcon);
-      $('i[data-brand]').addClass('fab').each(makeIcon);
+   actionClick(event) {
+      const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
+      const elem = event.target.closest(menuItemSelector);
+      const displayTitle = () => {
+         const title =  elem.closest('li').querySelector('span').textContent;
+         const header = globalThis.document.querySelector('main >h1');
+         app.pulse(header, title);
+         };
+      if (elem)
+         displayTitle();
+      },
+   makeIcons(type, selector, addClass) {
+      const iconify = (elem) => {
+         elem.classList.add('font-icon');
+         elem.classList.add(addClass);
+         elem.classList.add('fa-' + elem.dataset[type]);
+         };
+      globalThis.document.querySelectorAll(selector).forEach(iconify);
       },
    setup() {
-      app.setupIcons();
-      const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
-      $(globalThis.document).on({ click: app.actionClick }, menuItemSelector);
+      app.makeIcons('icon',  'i[data-icon]',  'fas');
+      app.makeIcons('brand', 'i[data-brand]', 'fab');
+      globalThis.document.addEventListener('click', app.actionClick);
       },
    };
 
-app.setup();
+hamburgerMenu.dom.onReady(app.setup);
