@@ -43,8 +43,10 @@
       "clean": [
          "rimraf build dist docs/hamburger-menu.js"
       ],
+      "lint": [
+         "jshint . --exclude-path .gitignore"
+      ],
       "build": [
-         "jshint . --exclude-path .gitignore",
          "replacer src --ext=.css build --concat=hamburger-menu.css",
          "csso build/hamburger-menu.css --output build/hamburger-menu.min.css",
          "copy-folder src --ext=.js build",
@@ -56,7 +58,7 @@
       ]
    },
    "scripts": {
-      "pretest": "run-scripts clean build",
+      "pretest": "run-scripts clean lint build",
       "test": "mocha spec/*.spec.js",
       "interactive": "browser-sync . --startPath docs --files docs"
    },
@@ -64,7 +66,7 @@
    },
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.4",
-      "add-dist-header": "~1.1",
+      "add-dist-header": "~1.2",
       "assert-deep-strict-equal": "~1.1",
       "browser-sync": "~2.29",
       "copy-file-util": "~1.1",
@@ -73,7 +75,7 @@
       "dna-engine": "~3.0",
       "jshint": "~2.13",
       "mocha": "~10.2",
-      "replacer-util": "~1.1",
+      "replacer-util": "~1.2",
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
       "uglify-js": "~3.17",
