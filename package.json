@@ -10,7 +10,10 @@
    "files": [
       "dist"
    ],
-   "repository": "github:center-key/hamburger-menu",
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/center-key/hamburger-menu.git"
+   },
    "homepage": "https://github.com/center-key/hamburger-menu",
    "bugs": "https://github.com/center-key/hamburger-menu/issues",
    "docs": "https://github.com/center-key/hamburger-menu#readme",
@@ -62,11 +65,10 @@
       "test": "mocha spec/*.spec.js",
       "interactive": "browser-sync . --startPath docs --files docs"
    },
-   "dependencies": {
-   },
+   "dependencies": {},
    "devDependencies": {
       "@fortawesome/fontawesome-free": "~6.4",
-      "add-dist-header": "~1.2",
+      "add-dist-header": "~1.3",
       "assert-deep-strict-equal": "~1.1",
       "browser-sync": "~2.29",
       "copy-file-util": "~1.1",
@@ -79,7 +81,7 @@
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
       "uglify-js": "~3.17",
-      "w3c-html-validator": "~1.4",
+      "w3c-html-validator": "~1.5",
       "web-ignition": "~2.0"
    }
 }
