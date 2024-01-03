@@ -1,6 +1,6 @@
 {
    "name": "hamburger-menu",
-   "version": "0.6.0",
+   "version": "0.6.1",
    "description": "☰ A responsive CSS solution for a hamburger menu ☰",
    "license": "MIT",
    "type": "module",
@@ -53,35 +53,37 @@
          "replacer src --ext=.css build --concat=hamburger-menu.css",
          "csso build/hamburger-menu.css --output build/hamburger-menu.min.css",
          "copy-folder src --ext=.js build",
-         "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js",
+         "uglifyjs src/hamburger-menu.js --output build/hamburger-menu.min.js"
+      ],
+      "dist": [
          "add-dist-header build dist --delimiter=☰",
          "copy-file dist/hamburger-menu.css --folder docs",
-         "copy-file dist/hamburger-menu.js --folder docs",
-         "html-validator"
+         "copy-file dist/hamburger-menu.js  --folder docs",
+         "html-validator docs"
       ]
    },
    "scripts": {
-      "pretest": "run-scripts clean lint build",
+      "pretest": "run-scripts clean lint build dist",
       "test": "mocha spec/*.spec.js",
       "interactive": "browser-sync . --startPath docs --files docs"
    },
    "dependencies": {},
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~6.4",
+      "@fortawesome/fontawesome-free": "~6.5",
       "add-dist-header": "~1.3",
       "assert-deep-strict-equal": "~1.1",
-      "browser-sync": "~2.29",
+      "browser-sync": "~3.0",
       "copy-file-util": "~1.1",
       "copy-folder-util": "~1.1",
       "csso-cli": "~4.0",
-      "dna-engine": "~3.0",
+      "dna-engine": "~3.1",
       "jshint": "~2.13",
       "mocha": "~10.2",
       "replacer-util": "~1.2",
       "rimraf": "~5.0",
       "run-scripts-util": "~1.2",
       "uglify-js": "~3.17",
-      "w3c-html-validator": "~1.5",
-      "web-ignition": "~2.0"
+      "w3c-html-validator": "~1.6",
+      "web-ignition": "~2.1"
    }
 }
