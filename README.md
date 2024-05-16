@@ -4,7 +4,7 @@ _A responsive CSS solution_
 [![License:MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/center-key/hamburger-menu/blob/main/LICENSE.txt)
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
 [![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge?style=rounded)](https://www.jsdelivr.com/package/npm/hamburger-menu)
-[![Build](https://github.com/center-key/hamburger-menu/workflows/build/badge.svg)](https://github.com/center-key/hamburger-menu/actions/workflows/run-spec-on-push.yaml)
+[![Build](https://github.com/center-key/hamburger-menu/actions/workflows/run-spec-on-push.yaml/badge.svg)](https://github.com/center-key/hamburger-menu/actions/workflows/run-spec-on-push.yaml)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
 As they say, *"Out of sight, out of mind"*.

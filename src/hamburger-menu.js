@@ -13,7 +13,7 @@ const hamburgerMenu = {
    //    </aside>
    // </nav>
 
-   version: '{{pkg.version}}',
+   version: '{{package.version}}',
 
    selectItem(elem) {
       const menuItem = elem.closest('li');
