@@ -1,4 +1,4 @@
-//! hamburger-menu v0.6.1 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
+//! hamburger-menu v0.6.2 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
    // <nav class=hamburger-menu>
@@ -13,7 +13,7 @@ const hamburgerMenu = {
    //    </aside>
    // </nav>
 
-   version: '0.6.1',
+   version: '0.6.2',
 
    selectItem(elem) {
       const menuItem = elem.closest('li');
