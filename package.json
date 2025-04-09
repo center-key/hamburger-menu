@@ -73,7 +73,7 @@
    },
    "dependencies": {},
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~6.6",
+      "@fortawesome/fontawesome-free": "~6.7",
       "add-dist-header": "~1.4",
       "assert-deep-strict-equal": "~1.2",
       "browser-sync": "~3.0",
@@ -82,12 +82,12 @@
       "csso-cli": "~4.0",
       "dna-engine": "~3.2",
       "jshint": "~2.13",
-      "mocha": "~10.7",
+      "mocha": "~11.1",
       "replacer-util": "~1.3",
       "rimraf": "~6.0",
       "run-scripts-util": "~1.3",
       "uglify-js": "~3.19",
       "w3c-html-validator": "~1.8",
-      "web-ignition": "~2.2"
+      "web-ignition": "~2.3"
    }
 }
