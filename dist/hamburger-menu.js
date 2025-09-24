@@ -1,19 +1,19 @@
-//! hamburger-menu v0.6.2 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
+//! hamburger-menu v0.7.0 ☰ https://github.com/center-key/hamburger-menu ☰ MIT License
 
 const hamburgerMenu = {
    // <nav class=hamburger-menu>
    //    <a class=hamburger href=#>&#9776;</a>
    //    <aside>
-   //       <ul>
+   //       <menu>
    //          <li><a href=.>Home</a></li>
    //          <li><a href=page1.html>Page 1</a></li>
    //          <li><a href=page2.html>Page 2</a></li>
    //          <li><a href=page3.html>Page 3</a></li>
-   //       </ul>
+   //       </menu>
    //    </aside>
    // </nav>
 
-   version: '0.6.2',
+   version: '0.7.0',
 
    selectItem(elem) {
       const menuItem = elem.closest('li');
@@ -71,9 +71,9 @@ const hamburgerMenu = {
          // Example (execute myApp.setup() as soon as the DOM is interactive):
          //    hamburgerMenu.dom.onReady(myApp.setup);
          if (globalThis.document.readyState === 'complete')
-            callback();
+            globalThis.setTimeout(callback);
          else
-            globalThis.window.addEventListener('DOMContentLoaded', callback);
+            globalThis.document.addEventListener('DOMContentLoaded', callback);
          },
       },
 

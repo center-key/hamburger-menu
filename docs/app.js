@@ -11,13 +11,13 @@ const app = {
       if (text !== undefined)
          elem.textContent = text;
       const animate = () => {
-         elem.style.opacity = '1';
+         elem.style.opacity =    '1';
          elem.style.transition = 'all 500ms';
          };
       globalThis.requestAnimationFrame(animate);
       },
    actionClick(event) {
-      const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside ul li span';
+      const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside menu li span';
       const elem = event.target.closest(menuItemSelector);
       const displayTitle = () => {
          const title =  elem.closest('li').querySelector('span').textContent;

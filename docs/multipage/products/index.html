@@ -1,10 +1,10 @@
 <!doctype html>
+<html lang=en>
 <!--
 HamburgerMenu ☰ A responsive CSS solution
 github.com/center-key/hamburger-menu
 License: MIT
 -->
-<html lang=en>
 <head>
    <meta charset=utf-8>
    <meta name=viewport    content="width=device-width, initial-scale=1">
@@ -12,7 +12,7 @@ License: MIT
    <meta name=description content="Products page with a mobile-friendly hamburger drop-down menu">
    <title>HamburgerMenu &#9776; Multipage</title>
    <link rel=icon       href=https://centerkey.com/graphics/bookmark-icon.png>
-   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7/css/all.min.css>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0/css/all.min.css>
    <link rel=stylesheet href=../../hamburger-menu.css>
    <link rel=stylesheet href=../../style.css>
    <script defer src=../../hamburger-menu.js></script>
@@ -25,18 +25,18 @@ License: MIT
    <nav class=hamburger-menu>
       <a class=hamburger href=#>&#9776;</a>
       <aside>
-         <ul>
+         <menu>
             <li><a href=..><i data-icon=home></i>Home</a></li>
             <li>
                <a href=.><i data-icon=cubes></i>Products</a>
-               <ul>
+               <menu>
                   <li><a href=x3000.html><i data-icon=cube></i>X-3000</a></li>
                   <li><a href=x3200.html><i data-icon=cube></i>X-3200</a></li>
-               </ul>
+               </menu>
             </li>
             <li><a href=../support.html><i data-icon=life-ring></i>Support</a></li>
             <li><a href=../about.html><i data-icon=rocket></i>About</a></li>
-         </ul>
+         </menu>
       </aside>
    </nav>
 </header>

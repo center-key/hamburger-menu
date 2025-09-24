@@ -25,9 +25,10 @@ body >footer i.font-icon:hover {
    color: blueviolet;
    }
 
-nav.hamburger-menu aside ul li i.font-icon {
+nav.hamburger-menu aside menu li i.font-icon {
    width: 1.5em;
+   text-align: left;
    }
-nav.hamburger-menu aside ul li.current >*:first-child >i.font-icon {
+nav.hamburger-menu aside menu li.current >*:first-child >i.font-icon {
    color: gold;
    }
