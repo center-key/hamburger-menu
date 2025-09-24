@@ -4,12 +4,12 @@ const hamburgerMenu = {
    // <nav class=hamburger-menu>
    //    <a class=hamburger href=#>&#9776;</a>
    //    <aside>
-   //       <ul>
+   //       <menu>
    //          <li><a href=.>Home</a></li>
    //          <li><a href=page1.html>Page 1</a></li>
    //          <li><a href=page2.html>Page 2</a></li>
    //          <li><a href=page3.html>Page 3</a></li>
-   //       </ul>
+   //       </menu>
    //    </aside>
    // </nav>
 
@@ -71,9 +71,9 @@ const hamburgerMenu = {
          // Example (execute myApp.setup() as soon as the DOM is interactive):
          //    hamburgerMenu.dom.onReady(myApp.setup);
          if (globalThis.document.readyState === 'complete')
-            callback();
+            globalThis.setTimeout(callback);
          else
-            globalThis.window.addEventListener('DOMContentLoaded', callback);
+            globalThis.document.addEventListener('DOMContentLoaded', callback);
          },
       },
 

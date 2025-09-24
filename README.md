@@ -55,12 +55,12 @@ for your website:
 <nav class=hamburger-menu>
    <a class=hamburger href=#>&#9776;</a>
    <aside>
-      <ul>
+      <menu>
          <li><a href=.>Home</a></li>
          <li><a href=page1.html>Page 1</a></li>
          <li><a href=page2.html>Page 2</a></li>
          <li><a href=page3.html>Page 3</a></li>
-      </ul>
+      </menu>
    </aside>
 </nav>
 ```
@@ -80,13 +80,13 @@ nav.hamburger-menu {
    color: gainsboro;            /* menu font color */
    background-color: teal;      /* menu background color */
    }
-nav.hamburger-menu aside ul li.current {
+nav.hamburger-menu aside menu li.current {
    border-color: white;         /* border color for selected menu item */
    }
-nav.hamburger-menu aside ul li.current >span,
-nav.hamburger-menu aside ul li.current >a,
-nav.hamburger-menu aside ul li >span:hover,
-nav.hamburger-menu aside ul li >a:hover {
+nav.hamburger-menu aside menu li.current >span,
+nav.hamburger-menu aside menu li.current >a,
+nav.hamburger-menu aside menu li >span:hover,
+nav.hamburger-menu aside menu li >a:hover {
    color: white;                /* menu font highlight color */
    background-color: darkcyan;  /* menu background highlight color */
    }
