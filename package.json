@@ -9,7 +9,7 @@
    "style": "dist/hamburger-menu.min.css",
    "exports": {
       ".": "./dist/hamburger-menu.js",
-      "./": "./dist/"
+      "./*": "./dist/*"
    },
    "files": [
       "dist"
@@ -74,7 +74,7 @@
    },
    "dependencies": {},
    "devDependencies": {
-      "@fortawesome/fontawesome-free": "~7.0",
+      "@fortawesome/fontawesome-free": "~7.1",
       "add-dist-header": "~1.5",
       "assert-deep-strict-equal": "~1.2",
       "browser-sync": "~3.0",
