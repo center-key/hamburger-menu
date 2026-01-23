@@ -27,6 +27,7 @@ describe('The current files', () => {
          'hamburger-menu.js',
          'index.html',
          'multipage',
+         'robots.txt',
          'single-page-app',
          'style.css',
          ];

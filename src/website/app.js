@@ -5,6 +5,7 @@ License: MIT
 */
 
 const app = {
+
    pulse(elem, text) {
       elem.style.opacity =    '0';
       elem.style.transition = 'all 0ms';
@@ -16,6 +17,7 @@ const app = {
          };
       globalThis.requestAnimationFrame(animate);
       },
+
    actionClick(event) {
       const menuItemSelector = 'body.single-page-app nav.hamburger-menu aside menu li span';
       const elem = event.target.closest(menuItemSelector);
@@ -27,6 +29,7 @@ const app = {
       if (elem)
          displayTitle();
       },
+
    makeIcons(type, selector, addClass) {
       const iconify = (elem) => {
          elem.classList.add('font-icon');
@@ -35,11 +38,13 @@ const app = {
          };
       globalThis.document.querySelectorAll(selector).forEach(iconify);
       },
+
    setup() {
       app.makeIcons('icon',  'i[data-icon]',  'fas');
       app.makeIcons('brand', 'i[data-brand]', 'fab');
       globalThis.document.addEventListener('click', app.actionClick);
       },
+
    };
 
 hamburgerMenu.dom.onReady(app.setup);
