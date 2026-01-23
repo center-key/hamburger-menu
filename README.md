@@ -5,6 +5,7 @@ _A responsive CSS solution_
 [![npm](https://img.shields.io/npm/v/hamburger-menu.svg)](https://www.npmjs.com/package/hamburger-menu)
 [![Hits](https://data.jsdelivr.com/v1/package/npm/hamburger-menu/badge?style=rounded)](https://www.jsdelivr.com/package/npm/hamburger-menu)
 [![Build](https://github.com/center-key/hamburger-menu/actions/workflows/run-spec-on-push.yaml/badge.svg)](https://github.com/center-key/hamburger-menu/actions/workflows/run-spec-on-push.yaml)
+[![Publish Website](https://github.com/center-key/hamburger-menu/actions/workflows/publish-website.yaml/badge.svg)](https://github.com/center-key/hamburger-menu/actions/workflows/publish-website.yaml)
 
 Hamburger button menus should be used with caution as they can impair user interaction.
 As they say, *"Out of sight, out of mind"*.
@@ -107,13 +108,8 @@ Example of highlighting the menu item for "**Page 2**":
 <li class=current><a href=page2.html>Page 2</a></li>
 ```
 
-**Note:**<br>
-To support old legacy web browsers, add a polyfill for
-[URL](https://www.npmjs.com/package/url-polyfill)
-to your website.
-
 ## F) hamburger-menu.js File is Optional
-You can the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
+You can skip the `hamburger-menu.js` file by incorporating this one line of JavaScript in your website:
 ```javascript
 document.addEventListener('click', () => {});  //workaround for sticky hover on mobile
 ```
