@@ -16,7 +16,7 @@ License: MIT
    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{package.devDependencies.-fortawesome-fontawesome-free|version}}/css/all.min.css>
    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/reset.min.css>
-   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna-engine@{{package.devDependencies.dna-engine|version}}/dist/dna-engine.css>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna-dom@{{package.devDependencies.dna-dom|version}}/dist/dna-dom.css>
    <style>
       body { text-align: center; color: gray; background-color: black; }
       body >header { margin-bottom: 40px; }
@@ -31,8 +31,8 @@ License: MIT
          body >main >nav i.font-icon { font-size: 6rem; }
          }
    </style>
-   <script defer src=https://cdn.jsdelivr.net/npm/dna-engine@3.3/dist/dna-engine.min.js></script>
-   <script defer src=https://cdn.jsdelivr.net/npm/web-ignition@2.5/dist/lib-x.min.js></script>
+   <script defer src=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/lib-x.min.js></script>
+   <script defer src=https://cdn.jsdelivr.net/npm/dna-dom@{{package.devDependencies.dna-dom|version}}/dist/dna-dom.min.js></script>
    <script defer src=hamburger-menu.js></script>
    <script>globalThis.onerror = () => globalThis.document.body.style.background = 'pink';</script>
    <script data-on-load=displayVersion data-wait-for=hamburgerMenu>
