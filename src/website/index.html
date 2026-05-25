@@ -15,14 +15,14 @@ License: MIT
    <link rel=preconnect href=https://fonts.googleapis.com>
    <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@{{package.devDependencies.-fortawesome-fontawesome-free|version}}/css/all.min.css>
-   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/reset.min.css>
    <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/dna-dom@{{package.devDependencies.dna-dom|version}}/dist/dna-dom.css>
+   <link rel=stylesheet href=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/reset.min.css>
    <style>
       body { text-align: center; color: gray; background-color: black; }
       body >header { margin-bottom: 40px; }
-      body >main >nav { margin: 20px auto; max-width: 550px; }
-      body >main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
-      body >main >nav figcaption { margin-bottom: 20px; }
+      main >nav { margin: 20px auto; max-width: 550px; }
+      main >nav i.font-icon { font-size: 8rem; margin-bottom: 5px; }
+      main >nav figcaption { margin-bottom: 20px; }
       body >footer p:first-child { font-size: 1.3rem; font-weight: lighter; margin-bottom: 10px; }
       body >footer i.font-icon { font-size: 2.7rem; }
       body >footer figure { display: inline-block; width: 100px; }
@@ -31,8 +31,8 @@ License: MIT
          body >main >nav i.font-icon { font-size: 6rem; }
          }
    </style>
-   <script defer src=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/lib-x.min.js></script>
    <script defer src=https://cdn.jsdelivr.net/npm/dna-dom@{{package.devDependencies.dna-dom|version}}/dist/dna-dom.min.js></script>
+   <script defer src=https://cdn.jsdelivr.net/npm/web-ignition@{{package.devDependencies.web-ignition|version}}/dist/lib-x.min.js></script>
    <script defer src=hamburger-menu.js></script>
    <script>globalThis.onerror = () => globalThis.document.body.style.background = 'pink';</script>
    <script data-on-load=displayVersion data-wait-for=hamburgerMenu>
