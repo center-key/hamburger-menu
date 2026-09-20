@@ -82,7 +82,7 @@ releaseInstructions() {
 runSpecs() {
    cd $projectHome
    npm test
-   npm run interactive
+   npm start
    echo
    }
 
